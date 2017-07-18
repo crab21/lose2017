@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明德微校园</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <!--扩展的两个-->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js'
+            charset='utf-8'></script>
+    <!--jQuery-->
+    <script type='text/javascript' src='../js/jquery-2.1.4.js'></script>
+    <link rel="stylesheet" href="../css/demos.css">
+
+    <!--使用cookie-->
+    <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
+
+    <!-- head 中 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+
+    <!--<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>-->
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
+    <!--jQuery结束-->
+</head>
+<body>
+
+<script language="javascript">
+    jQuery(function ($) {
+        var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+        $.getJSON(url, function (data) {
+            $(".card-content-inner").html("您的ip:" + data.Ip + "<br>" + "系统:" + data.OS);
+        });
+    });
+</script>
+
+<header class="bar bar-nav">
+    <h1 class="title"><img src="../img/loseTitle.png" width="20px" height="20px">&nbsp;失物招领信息发布中心</h1>
+</header>
+<div class="content" style="margin-top: 20%">
+
+    <div style="display: inline">
+        <div class="weui-cells__title"></div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" style="text-align: center" type="text" placeholder="请选择查询类型" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on("click", ".weui-input", function () {
+            $.actions({
+                title: "选择搜索内容",
+                onClose: function () {
+                    console.log("close");
+                },
+                actions: [
+                    {
+                        text: "按内容",
+                        className: "color-primary",
+                        onClick: function () {
+                            $(".weui-input").val("按内容");
+                            $(".bar-header-secondary").css("display", "block");
+                        }
+                    },
+                    {
+                        text: "按时间",
+                        className: "color-warning",
+                        onClick: function () {
+                            timeType();
+                        }
+                    },
+                    {
+                        text: "按地点",
+                        className: 'color-danger',
+                        onClick: function () {
+                            $(".weui-input").val("按地点");
+                            $(".bar-header-secondary").css("display", "block");
+                        }
+                    }
+                ]
+            });
+        });
+        function timeType() {
+            $.actions({
+                title: "请选择",
+                onClose: function () {
+                    console.log("close");
+                },
+                actions: [
+                    {
+                        text: "三天内",
+                        className: "color-primary",
+                        onClick: function () {
+
+                        }
+                    },
+                    {
+                        text: "一周内",
+                        className: "color-primary",
+                        onClick: function () {
+
+                        }
+                    },
+                    {
+                        text: "一月内",
+                        className: "color-primary",
+                        onClick: function () {
+
+                        }
+                    }
+                ]
+            });
+        }
+    </script>
+    <div class="bar bar-header-secondary" style="margin-top: 50px;display: none">
+        <div class="searchbar">
+            <a class="searchbar-cancel">取消</a>
+            <div class="search-input">
+                <label class="icon icon-search" for="search"></label>
+                <input type="search" id='search' placeholder='输入关键字...'/>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card" style="margin-top: 200px">
+        <div class="card-content">
+            <div class="card-content-inner" style="background-color:gray"></div>
+        </div>
+    </div>
+</div>
+<script src="../js/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Entity.LoseInfoEntity">
+    <resultMap id="listInfo" type="Entity.LoseInfoEntity">
+        <id property="id" column="id"/>
+        <result property="ltitle" column="ltitle"/>
+        <result property="ltype" column="ltype"/>
+        <result property="ltime" column="ltime"/>
+        <result property="linfo" column="linfo"/>
+        <result property="limg" column="limg"/>
+        <result property="lcomment" column="lcomment"/>
+        <result property="location" column="location"/>
+    </resultMap>
+    <select id="selectAllInfo" resultMap="listInfo" parameterType="Entity.Page">
+        select * from lose_info order by id desc limit #{pageCount},#{pageSize}
+    </select>
+
+    <insert id="insertLoseInfo" parameterType="Entity.LoseInfoEntity">
+        insert into lose_info VALUES
+        (0,#{ltitle},#{ltype},#{limg},#{linfo},#{ltime},0,#{location})
+    </insert>
+
+
+    <select id="selectLoseOneById" parameterType="int" resultType="Entity.LoseInfoEntity">
+        select * from lose_info where id=#{id}
+    </select>
+
+
+    <resultMap id="commentInfo" type="Entity.CommentInfoEntity">
+        <id property="id" column="id"/>
+        <result property="lcommentInfo" column="lcommentInfo"/>
+        <result property="lid" column="lid"/>
+        <result property="lctime" column="lctime"/>
+        <result property="des_info" column="des_info"/>
+    </resultMap>
+    <select id="selectCommentInfo" parameterType="int" resultMap="commentInfo">
+        select * from comment_info where lid=#{id} ORDER by id DESC
+    </select>
+
+    <insert id="insertComment" parameterType="Entity.CommentInfoEntity"  useGeneratedKeys="true" keyProperty="id">
+        insert into comment_info VALUES (0,#{lcommentInfo},#{lid},#{lctime},#{des_info})
+    </insert>
+
+    <update id="addCommentCount" parameterType="java.util.Map">
+      update lose_info set lcomment=#{commentCount} where id=#{id}
+    </update>
+</mapper>
