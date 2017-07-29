@@ -3,13 +3,19 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-      <!-- 别名 -->
-      <settings>
-            <!-- 打印查询语句 -->
-            <setting name="logImpl" value="STDOUT_LOGGING" />
-            <!-- lazyLoadingEnabled:延迟加载启动，默认是false -->
-            <setting name="lazyLoadingEnabled" value="true"/>
-            <!-- aggressiveLazyLoading：积极的懒加载，false的话按需加载，默认是true -->
-            <setting name="aggressiveLazyLoading" value="false"/>
-      </settings>
+    <!-- 别名 -->
+    <settings>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- lazyLoadingEnabled:延迟加载启动，默认是false -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- aggressiveLazyLoading：积极的懒加载，false的话按需加载，默认是true -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+    <typeAliases>
+        <typeAlias alias="searchEntityMap" type="Entity.SearchEntity"/>
+        <typeAlias alias="commentInfoEntityMap" type="Entity.CommentInfoEntity"/>
+        <typeAlias alias="loseInfoEntityMap" type="Entity.LoseInfoEntity"/>
+        <typeAlias alias="pageMap" type="Entity.Page"/>
+    </typeAliases>
 </configuration>
