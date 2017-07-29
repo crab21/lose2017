@@ -3,22 +3,19 @@ package Controller;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
 import Entity.Page;
+import Entity.SearchEntity;
 import Service.Componment.ProgressEntity;
 import Service.LoseInfoService;
-import Service.LoseInfoServiceImp;
 import com.google.gson.Gson;
-import org.apache.tools.ant.taskdefs.Sleep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
@@ -34,14 +31,12 @@ import java.util.Map;
 @RequestMapping("page/index")
 public class LoseInfo {
 
-
     @Autowired
     private LoseInfoService loseInfoService;
 
     //展示主页信息
     @RequestMapping("loseAllInfo")
     public String showInfo(@ModelAttribute("page") Page page, HttpServletRequest request, HttpServletResponse response) {
-        System.out.println(page.getPage() + "--------" + page.getPageCount());
         List list = loseInfoService.findAllInfo(page);
 
         setResponseInfo(response, list);
@@ -60,9 +55,8 @@ public class LoseInfo {
     //    处理前端的页面数据，在此先进行封装成对象
     @ModelAttribute
     public void setLoseInfoEntity(String ltitle,
-                                  String ltype, String location, String linfo, MultipartFile file, Model model) {
-        System.out.println(ltitle + "-" + ltype + "-" + location + "-" + linfo + "--" + file);
-        if (ltitle != null && ltype != null && location != null && linfo != null) {
+                                  String ltype, String location, String linfo, String lphone, MultipartFile file, Model model) {
+        if (ltitle != null && ltype != null && location != null && linfo != null && lphone != null) {
             if (file != null) {
                 if (!file.isEmpty()) {
                     model.addAttribute("file", file);
@@ -83,6 +77,7 @@ public class LoseInfo {
 
             loseInfoEntity.setLocation(location);
             loseInfoEntity.setLinfo(linfo);
+            loseInfoEntity.setLphone(lphone);
 //        给视图模型的前端页面添加数据
             loseInfoEntity.setLtime(new Date().toLocaleString().toString());
             model.addAttribute("loseInfoEntity", loseInfoEntity);
@@ -92,24 +87,23 @@ public class LoseInfo {
 
     }
 
-
+    //表单提交  多线程处理
     @RequestMapping(value = "subs")
     public String sub(HttpServletRequest request, HttpServletResponse response, Model model) {
         String filename = "";
         MultipartFile file = (MultipartFile) model.asMap().get("file");
 //    上传文件,返回文件名
         if (file != null) {
-            filename = saveFile(file, request);
-        }
-        LoseInfoEntity loseInfoEntity = (LoseInfoEntity) model.asMap().get("loseInfoEntity");
-        if (filename != "") {
-            loseInfoEntity.setLimg(filename);
-        } else {
-            loseInfoEntity.setLimg("123.jpg");
-        }
-        loseInfoService.addLoseInfo(loseInfoEntity);
+            filename = file.getOriginalFilename();
+            String ftype = filename.substring(filename.lastIndexOf("."), filename.length()).toLowerCase();
+            filename = new Date().getTime() + "" + filename.substring(0, filename.lastIndexOf(".")) + ftype;
 
-
+            Runnable run1 = new SaveFileThread(file, filename);
+            Thread thread = new Thread(run1);
+            thread.start();
+        }
+        Thread thread2 = new Thread(new addLoseInfoThread(model, loseInfoService, filename));
+        thread2.start();
         setResponseInfo(response, "ok");
         return null;
     }
@@ -129,27 +123,6 @@ public class LoseInfo {
         return null;
     }
 
-    //上传文件  单独的方法
-    public String saveFile(MultipartFile file, HttpServletRequest request) {
-        if (!file.isEmpty()) {
-            String path = request.getServletContext().getRealPath("/uploadFile/");
-            String filename = file.getOriginalFilename();
-
-            String ftype = filename.substring(filename.lastIndexOf("."), filename.length()).toLowerCase();
-            filename = new Date().getTime() + "" + filename.substring(0, filename.lastIndexOf(".")) + ftype;
-            File filepath = new File(path, filename);
-            if (!filepath.getParentFile().exists()) {
-                filepath.getParentFile().mkdirs();
-            }
-            try {
-                file.transferTo(new File(path + File.separator + filename));
-                return filename;
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return null;
-    }
 
     @RequestMapping("addComment")
     public String addComment(@ModelAttribute("commentInfoEntity") CommentInfoEntity commentInfoEntity,
@@ -174,6 +147,15 @@ public class LoseInfo {
             map.put("flag", "留言失败");
             setResponseInfo(response, map);
         }
+        return null;
+    }
+
+
+    @RequestMapping("searchs")
+    public String searchByType(@ModelAttribute("searchEntity") SearchEntity searchEntity, HttpServletResponse response) {
+        System.out.println("-------------");
+        List list = loseInfoService.searchInfo(searchEntity);
+        setResponseInfo(response, list);
         return null;
     }
 

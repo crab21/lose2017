@@ -3,6 +3,7 @@ package Service;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
 import Entity.Page;
+import Entity.SearchEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,4 +24,6 @@ public interface LoseInfoService {
     Map addCommentInfo(CommentInfoEntity commentInfoEntity);
 
     void addCommentCount(int id,int commentCount);
+
+    List searchInfo(SearchEntity searchEntity);
 }

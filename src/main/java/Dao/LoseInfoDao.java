@@ -3,6 +3,7 @@ package Dao;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
 import Entity.Page;
+import Entity.SearchEntity;
 
 import java.util.List;
 import java.util.Map;
@@ -20,4 +21,6 @@ public interface LoseInfoDao {
     Map insertCommentInfo(CommentInfoEntity commentInfoEntity);
 
     void updateCommentCount(int id,int commentCount);
+
+    List selectSearchInfo(SearchEntity searchEntity);
 }

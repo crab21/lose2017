@@ -15,11 +15,12 @@ public class LoseInfoEntity {
     private String ltime;
     private int lcomment;
     private String location;
+    private String lphone;
 
     public LoseInfoEntity() {
     }
 
-    public LoseInfoEntity(int id, String ltitle, int ltype, String limg, String linfo, String ltime, int lcomment, String location) {
+    public LoseInfoEntity(int id, String ltitle, int ltype, String limg, String linfo, String ltime, int lcomment, String location, String lphone) {
         this.id = id;
         this.ltitle = ltitle;
         this.ltype = ltype;
@@ -28,6 +29,7 @@ public class LoseInfoEntity {
         this.ltime = ltime;
         this.lcomment = lcomment;
         this.location = location;
+        this.lphone = lphone;
     }
 
     public int getId() {
@@ -92,5 +94,13 @@ public class LoseInfoEntity {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getLphone() {
+        return lphone;
+    }
+
+    public void setLphone(String lphone) {
+        this.lphone = lphone;
     }
 }

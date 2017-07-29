@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>明德微校园</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
 
@@ -36,17 +37,7 @@
     <script type="text/javascript">
         <!--第page页-->
         var page = 0;
-        //        function startLoad() {
-        //            var ok = document.URL.split("=")[1];
-        //;            if (ok=="ok") {
-        //                $.toast("提交成功");
-        //                document
-        //            }
-        //            if (ok=="no") {
-        //                $.toast("提交失败", "forbidden");
-        //            }
-        //            lo("noshow");
-        //        }
+
         function lo() {
             theme_dark();
             ++page;
@@ -85,24 +76,25 @@
             var html = "";
             for (var i = 0; i < data.length; ++i) {
                 var showOne = data[i].id;
-                html = '<div class="card" style="display: none"><div class="card-header">';
+                html = '<div class="card" style="display: none"><div class="card-header" style="display: inline-flex">';
 
                 if (data[i].ltype == 0) {
-                    html += '失物申报';
+                    html += '<img src="../img/失物申报.png" style="height: 20px;display: inline"><font size="3">' + data[i].id + '</font>&nbsp;&nbsp;失物申报';
                 } else {
-                    html += '失物上交';
+                    html += '<img src="../img/失物上交.png" style="height: 20px;display: inline"><font size="3">' + data[i].id + '</font> &nbsp;&nbsp;失物上交';
                 }
+
                 html += '</div>'
                     + '<div class="card-content">'
                     + '<div class="list-block media-list">'
                     + '<ul>'
                     + '<li class="item-content">'
                     + '<div class="item-media">'
-                    + '<img src="../uploadFile/' + data[i].limg + '" width="44">'
+                    + '<img src="http://119.28.86.177:38080/uploadFile/' + data[i].limg + '" width="44">'
                     + '</div>'
                     + '<div class="item-inner">'
                     + '<div class="item-title-row">'
-                    + '<div class="item-title">' + data[i].ltitle + '</div>'
+                    + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>'
                     + '  </div>'
 //                        +'<div class="item-subtitle">子标题</div>'
                     + '</div>'
@@ -124,10 +116,19 @@
         function showOnes(id) {
             location.href = "lose_one.html?id=" + id;
         }
+
+        function weixin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                lo();
+            } else {
+                location.href = "wrong.html";
+            }
+        }
     </script>
 
 </head>
-<body id="bodys" class="theme-dark" onload="lo();">
+<body id="bodys" class="theme-dark" onload="weixin();">
 
 <div class="page">
     <header class="bar bar-nav">
@@ -173,7 +174,7 @@
 <div class="panel panel-left panel-cover" id='panel-left-demo'>
     <div class="content-block">
 
-        <p><a href="#" class="close-panel">关闭o</a></p>
+        <p><a href="#" class="close-panel">关闭</a></p>
     </div>
     <div class="list-block">
         <div class="card" style="color: black;background-color: dimgrey">
@@ -181,7 +182,7 @@
                 <div class="list-block">
                     <ul>
                         <li>
-                            <a href="javascript:;" class="item-link item-content" id="searchInfo">
+                            <a href="search.html" class="item-link item-content" id="searchInfo">
                                 <div class="item-media"><i class="icon icon-f7"></i></div>
                                 <div class="item-inner">
                                     <div class="item-title">搜索</div>
@@ -192,12 +193,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            $("#searchInfo").bind('click', function () {
-
-            });
-
-        </script>
 
         <div class="card" style="color: black;background-color: dimgrey">
             <div class="card-content">
@@ -297,13 +292,8 @@
     <script>
         $("#aboutUs").bind('click', function () {
             $("#full").popup();
-
         })
     </script>
-
-
 </div>
-
-
 </body>
 </html>

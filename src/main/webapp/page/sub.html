@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>明德微校园</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
 
@@ -20,16 +21,34 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
 
     <!-- body 最后 -->
-    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
 
     <!-- 如果使用了某些拓展插件还需要额外的JS -->
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
     <!--jQuery结束-->
+    <script>
+        function theme_dark() {
+            var dateHour = new Date().getHours();
+            if (dateHour > 20 || dateHour < 7) {
+                $("body").addClass("theme-dark");
+            } else {
+                $("body").removeClass("theme-dark");
+            }
+
+        }
+        function weixin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                theme_dark();
+            } else {
+                location.href = "wrong.html";
+            }
+        }
+    </script>
 
 </head>
-<body class="">
+<body class="" onload="weixin();">
 
 <header class="bar bar-nav">
     <h1 class='title'><img src="../img/loseOneTitle.png" width="20px" height="18px">&nbsp;信息发布</h1>
@@ -43,9 +62,10 @@
                     <div class="item-content">
                         <div class="item-media"><i class="icon icon-form-name"></i></div>
                         <div class="item-inner">
-                            <div class="item-title label">标题</div>
+                            <!--<div class="item-title label">标题</div>-->
+                            <img src="../img/form/title.png" style="width: 25px">
                             <div class="item-input">
-                                <input type="text" placeholder="黑色钱包" maxlength="20" name="ltitle" id="ltitle">
+                                <input type="text" placeholder="黑色钱包" maxlength="15" name="ltitle" id="ltitle">
                             </div>
                         </div>
                     </div>
@@ -54,15 +74,16 @@
                     <div class="item-content">
                         <div class="item-media"><i class="icon icon-form-gender"></i></div>
                         <div class="item-inner">
-                            <div class="item-title label">类型</div>
-                            <input type="text" id='ltype' maxlength="10" name="ltype"/>
+                            <!--<div class="item-title label">类型</div>-->
+                            <img src="../img/form/type.png" style="width: 25px">
+                            <input type="text" placeholder="请选择类型" id='ltype' maxlength="10" name="ltype"/>
                         </div>
                     </div>
                 </li>
 
                 <script>
                     $("#ltype").select({
-                        title: "选择职业",
+                        title: "请选择类型",
                         items: ["失物上交", "失物申报"]
                     });
                 </script>
@@ -70,19 +91,32 @@
                     <div class="item-content">
                         <div class="item-media"><i class="icon icon-form-name"></i></div>
                         <div class="item-inner">
-                            <div class="item-title label">地点</div>
+                            <!--<div class="item-title label">地点</div>-->
+                            <img src="../img/form/location.png" style="width: 25px">
                             <div class="item-input">
-                                <input type="text" placeholder="1号楼312" maxlength="20" name="location" id="location">
+                                <input type="text" placeholder="1号楼312" maxlength="15" name="location" id="location">
                             </div>
                         </div>
                     </div>
                 </li>
-
+                <li>
+                    <div class="item-content">
+                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                        <div class="item-inner">
+                            <!--<div class="item-title label">地点</div>-->
+                            <img src="../img/form/phone.png" style="width: 25px">
+                            <div class="item-input">
+                                <input type="text" placeholder="155*****96" maxlength="11" name="lphone" id="lphone">
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="align-top">
                     <div class="item-content">
                         <div class="item-media"><i class="icon icon-form-comment"></i></div>
                         <div class="item-inner">
-                            <div class="item-title label">详细描述</div>
+                            <!--<div class="item-title label"></div>-->
+                            <img src="../img/form/info.png" style="width: 25px">
                             <div class="item-input">
                                 <textarea class="weui-textarea" placeholder="请描述物品信息" rows="3" id="linfo"
                                           name="linfo"></textarea>
@@ -91,6 +125,7 @@
                         </div>
                     </div>
                 </li>
+
             </ul>
 
             <script type="text/javascript">
@@ -99,13 +134,12 @@
                         var val = $(this).val();
                         var len = val.length;
                         if (len > 300) {
-                           $(this).val(val.substring(0,300));
-                            $.toptip('警告:字数到达上限', 'warning');                        }
-                        if(len <= 300){
+                            $(this).val(val.substring(0, 300));
+                            $.toptip('警告:字数到达上限', 'warning');
+                        }
+                        if (len <= 300) {
                             $(".weui-textarea-counter > span").html(len);
                         }
-
-
                     });
                 });
 
@@ -152,6 +186,11 @@
     <script type="text/javascript">
         var t = 1;
         $(document).ready(function () {
+            $("#lphone").focus(function () {
+                $(this).val("");
+                $(this).css("color","");
+            });
+
             $("#sub").bind('click', function () {
 
                 var formdata = new FormData();
@@ -159,12 +198,20 @@
                 var flagCount = 0;
                 $(":input").each(function (index) {
                     //                    loseInfoEntity[index] = $(this).val();
-                    if (index != 4) {
-                        var valus = $(this).val()
+                    if (index != 5) {
+                        var inputObj = $(this);
+                        var valus = inputObj.val().replace(/(^s+)|(\s+$)/g, "");
                         if (valus == null || valus == "" || valus == undefined) {
                             flagCount++;
+                        } else {
+                            if (index == 3) {
+                                if (!(/^1[34578]\d{9}$/.test(valus))) {
+                                    inputObj.css("color", "red");
+                                    flagCount-=50;
+                                }
+                            }
+                            formdata.append($(this).attr("name"), valus);
                         }
-                        formdata.append($(this).attr("name"), valus);
                     } else {
                         formdata.append($(this).attr("name"), $(this)[0].files[0]);
                     }
@@ -173,11 +220,15 @@
                     $.showLoading("上传文件中");
                     commitSub(formdata);
                 }
-                if (flagCount != 0) {
+                if (flagCount > 0) {
                     $.toptip("请将信息填写完整", "error");
+                }
+                if(flagCount < 0){
+                    $.toptip("请重新填写红色字体处", "error");
                 }
             });
         });
+
 
         //提交评论信息
         function commitSub(formdata) {

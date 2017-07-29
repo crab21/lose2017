@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>明德微校园</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
 
@@ -20,18 +21,13 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
 
     <!-- body 最后 -->
+
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
 
     <!-- 如果使用了某些拓展插件还需要额外的JS -->
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
     <!--jQuery结束-->
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="../js/picfull/jquery.mousewheel-3.0.6.pack.js"></script>
-
-    <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="../js/picfull/jquery.fancybox.js?v=2.1.5"></script>
-    <link rel="stylesheet" type="text/css" href="../css/picfull/jquery.fancybox.css?v=2.1.5" media="screen"/>
     <script>
 
         var page = 0;
@@ -72,21 +68,26 @@
 
         function addCommentInfo(data) {
             var loseOneInfo = data.loseInfo;
-            $(".title").html(loseOneInfo.ltitle);
+            $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.ltitle);
             var type = loseOneInfo.ltype;
             if (type == '0') {
-                $("#card-header").html("&diams;失物申报");
+                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='red'>&nbsp;失物申报</font>");
             } else {
-                $("#card-header").html("失物上交");
+                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>");
             }
 
             $(".card-content-inner > p").html(loseOneInfo.linfo);
             $("#ltimes").html(loseOneInfo.ltime);
-            $("#location > p").html("地点:" + loseOneInfo.location);
+            $("#location > p").html("<img src='../img/form/location.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.location + "<br><img src='../img/form/phone.png' style='width: 25px;height: 25px;'>&nbsp;&nbsp;" + loseOneInfo.lphone);
             $("#lcomment").html("<img src='../img/pinglun.png' id='comment_img'  height='20px' width='20px'>&nbsp;&nbsp;<span id='lcommentCount'>" + loseOneInfo.lcomment + "</span>");
-            var htimg = '<img src="../uploadFile/' + loseOneInfo.limg + '" id="showimg" width="100%" alt="">';
-            $("#bottom").html(htimg);
+            if (loseOneInfo.limg != "123.jpg") {
+                var htimg = '<img src="http://119.28.86.177:38080/uploadFile/' + loseOneInfo.limg + '" id="showimg" width="100%" alt="">';
+                $("#bottom").html(htimg);
 
+            } else {
+                $("#bottom-father").remove();
+            }
+//            添加评论
             var commentInfo = data.commentInfo;
             if (commentInfo.length > 0) {
                 var colength = commentInfo.length;
@@ -115,6 +116,16 @@
         }
 
 
+
+        function weixin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                showvalf();
+            } else {
+                location.href = "wrong.html";
+            }
+        }
+
     </script>
 
     <script>
@@ -132,7 +143,7 @@
     </script>
 
 </head>
-<body class="" onload="showvalf()">
+<body class="" onload="weixin()">
 <div class="page">
 
     <header class="bar bar-nav">
@@ -141,8 +152,8 @@
 
     <div class="content">
         <div class="card demo-card-header-pic">
-            <div class="card-header" id="card-header"></div>
-            <div valign="bottom" class="card-header color-white no-border no-padding">
+            <div class="card-header" id="card-header" style="display:inline-flex;"></div>
+            <div valign="bottom" class="card-header color-white no-border no-padding" id="bottom-father">
                 <a href="javascript:;" id="bottom"></a>
             </div>
             <div class="card-content">
@@ -210,21 +221,25 @@
             //    添加评论
             function confirmComment(id) {
                 var comment_content = $(".weui-textarea").val();
-                var os = $.device.os;
-                var commentCount = $("#lcommentCount").html();
+                if (comment_content == null || comment_content == "") {
+                    $.toast("请留言", "text");
+                } else {
+                    var os = $.device.os;
+                    var commentCount = $("#lcommentCount").html();
 
-                $.ajax({
-                    url: "index/addComment",
-                    type: "POST",
-                    dataType: "json",
-                    data: {"id": commentCount,"lid": id, "lcommentInfo": comment_content, "des_info": "ok"},
-                    success: function (data) {
-                        $.toast(data.flag);
-                        if (data.flag == "留言成功") {
-                            dealCommentSuccess(data, commentCount);
+                    $.ajax({
+                        url: "index/addComment",
+                        type: "POST",
+                        dataType: "json",
+                        data: {"id": commentCount, "lid": id, "lcommentInfo": comment_content, "des_info": "ok"},
+                        success: function (data) {
+                            $.toast(data.flag);
+                            if (data.flag == "留言成功") {
+                                dealCommentSuccess(data, commentCount);
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
             //拿到评论的值和ID  后台添加评论处理  前段添加元素等处理
             function dealCommentSuccess(data, commentCount) {
@@ -284,7 +299,7 @@
                         <div class="list-block">
                             <ul>
                                 <li>
-                                    <a href="javascript:;" class="item-link item-content" id="searchInfo">
+                                    <a href="search.html" class="item-link item-content" id="searchInfo">
                                         <div class="item-media"><i class="icon icon-f7"></i></div>
                                         <div class="item-inner">
                                             <div class="item-title">搜索</div>
@@ -426,10 +441,13 @@
             <img src="../img/setting.png" style="width: 30px;height: 40px">
             <!--<span class="tab-label">文案</span>-->
         </a>
+        <a class="tab-item external" href="javascript:window.history.back();" id="loadmore">
+            <img src="../img/返回.png" style="width: 30px;height: 40px">
+            <!--<span class="tab-label">文案</span>-->
+        </a>
     </nav>
-
 </div>
 
-
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
 </body>
 </html>

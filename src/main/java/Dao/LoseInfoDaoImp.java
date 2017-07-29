@@ -3,6 +3,7 @@ package Dao;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
 import Entity.Page;
+import Entity.SearchEntity;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,5 +70,12 @@ public class LoseInfoDaoImp implements LoseInfoDao {
         map.put("id", id);
         map.put("commentCount", commentCount);
         sqlSession.update("addCommentCount", map);
+    }
+
+    public List selectSearchInfo(SearchEntity searchEntity) {
+        List list = sqlSession.selectList("searchByType",searchEntity);
+        System.out.println(list.size()+"-----------------------");
+
+        return list;
     }
 }

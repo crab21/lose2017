@@ -5,6 +5,7 @@ import Dao.LoseInfoDaoImp;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
 import Entity.Page;
+import Entity.SearchEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -46,5 +47,10 @@ public class LoseInfoServiceImp implements LoseInfoService {
     @Transactional
     public void addCommentCount(int id, int commentCount) {
         loseInfoDao.updateCommentCount(id, commentCount);
+    }
+
+    @Transactional
+    public List searchInfo(SearchEntity searchEntity) {
+        return loseInfoDao.selectSearchInfo(searchEntity);
     }
 }
