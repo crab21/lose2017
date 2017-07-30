@@ -53,4 +53,9 @@ public class LoseInfoServiceImp implements LoseInfoService {
     public List searchInfo(SearchEntity searchEntity) {
         return loseInfoDao.selectSearchInfo(searchEntity);
     }
+
+    @Transactional
+    public void deleteOne(int id) {
+        loseInfoDao.changeDeleteOne(id);
+    }
 }

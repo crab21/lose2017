@@ -15,6 +15,8 @@ public class Test {
     public static String myEmailAccount = "imrcrab@163.com";
     public static String myEmailPassword = "wpy110";
 
+    private static int id;
+
     // 发件人邮箱的 SMTP 服务器地址, 必须准确, 不同邮件服务器地址不同, 一般(只是一般, 绝非绝对)格式为: smtp.xxx.com
     // 网易163邮箱的 SMTP 服务器地址为: smtp.163.com
     public static String myEmailSMTPHost = "smtp.163.com";
@@ -22,7 +24,11 @@ public class Test {
     // 收件人邮箱（替换为自己知道的有效邮箱）
     public static String receiveMailAccount = "1164772625@qq.com";
 
-    public static void main(String[] args) throws Exception {
+    public Test(int id) {
+        this.id = id;
+    }
+
+    public  void sends() throws Exception {
         // 1. 创建参数配置, 用于连接邮件服务器的参数配置
         Properties props = new Properties();                    // 参数配置
         props.setProperty("mail.transport.protocol", "smtp");   // 使用的协议（JavaMail规范要求）
@@ -99,7 +105,7 @@ public class Test {
         message.setSubject("明德微校园", "UTF-8");
 
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("XX用户你好, 今天全场5折, 快来抢购, 错过今天再等一年。。。", "text/html;charset=UTF-8");
+        message.setContent("申请删除："+id+",请及时核实并处理...", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());

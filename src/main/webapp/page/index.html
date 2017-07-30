@@ -94,8 +94,12 @@
                     + '</div>'
                     + '<div class="item-inner">'
                     + '<div class="item-title-row">'
-                    + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>'
-                    + '  </div>'
+                    + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>';
+                if (data[i].lflag == 1) {
+                    html += "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
+                }
+
+                html += '  </div>'
 //                        +'<div class="item-subtitle">子标题</div>'
                     + '</div>'
                     + '</li>'
@@ -128,7 +132,7 @@
     </script>
 
 </head>
-<body id="bodys" class="theme-dark" onload="weixin();">
+<body id="bodys" class="theme-dark" onload="lo();">
 
 <div class="page">
     <header class="bar bar-nav">

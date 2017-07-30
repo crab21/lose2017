@@ -34,15 +34,26 @@
 
         function showvalf() {
             var id = document.URL.split("=")[1];
+            var flag = false;
             if (isNaN(id)) {
-                id = id.substring(0, id.lastIndexOf("#"));
-                if (isNaN(id)) {
-                    alert("请不要捣乱....");
+                var sid = id.substring(0, id.lastIndexOf("#"));
+                if (sid == "") {
+                    id = id.substring(0, id.lastIndexOf("&"));
+                    if (id != "" || id != undefined || !isNaN(id)) {
+                        flag = true;
+                    }
                 } else {
-                    comment_ajax(id);
+                    id = sid;
+                    flag = true;
                 }
-            } else {
+            }else {
+                flag=true;
+            }
+
+            if (flag) {
                 comment_ajax(id);
+            }else{
+                location.href="index.html";
             }
         }
 
@@ -76,7 +87,12 @@
                 $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>");
             }
 
-            $(".card-content-inner > p").html(loseOneInfo.linfo);
+            $(".card-content-inner > p").html("&nbsp;&nbsp;&nbsp; " + loseOneInfo.linfo);
+            if (loseOneInfo.lflag == 1) {
+                var hhtml = "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
+                $("#titles").append(hhtml);
+                $("#deleteOne").remove();
+            }
             $("#ltimes").html(loseOneInfo.ltime);
             $("#location > p").html("<img src='../img/form/location.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.location + "<br><img src='../img/form/phone.png' style='width: 25px;height: 25px;'>&nbsp;&nbsp;" + loseOneInfo.lphone);
             $("#lcomment").html("<img src='../img/pinglun.png' id='comment_img'  height='20px' width='20px'>&nbsp;&nbsp;<span id='lcommentCount'>" + loseOneInfo.lcomment + "</span>");
@@ -116,14 +132,15 @@
         }
 
 
-
         function weixin() {
             var ua = window.navigator.userAgent.toLowerCase();
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 showvalf();
             } else {
                 location.href = "wrong.html";
+//                showvalf();
             }
+
         }
 
     </script>
@@ -156,10 +173,12 @@
             <div valign="bottom" class="card-header color-white no-border no-padding" id="bottom-father">
                 <a href="javascript:;" id="bottom"></a>
             </div>
-            <div class="card-content">
-                <div class="card-content-inner">
+            <div class="card-content" id="titles">
+                <div class="card-content-inner" style="padding: 0px">
                     <p></p>
+
                 </div>
+
             </div>
 
 
@@ -167,6 +186,7 @@
                 <div class="card-content-inner" id="location">
                     <p></p>
                 </div>
+
             </div>
 
 
@@ -445,7 +465,47 @@
             <img src="../img/返回.png" style="width: 30px;height: 40px">
             <!--<span class="tab-label">文案</span>-->
         </a>
+        <a class="tab-item external" href="javascript:;" id="deleteOne">
+            <img src="../img/认领确认.png" style="width: 30px;height: 30px">
+            <!--<span class="tab-label">文案</span>-->
+        </a>
     </nav>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#deleteOne").bind('click', function () {
+
+
+                $.confirm("确定申请删除此条消息吗?", function () {
+                    //点击确认后的回调函数
+                    confirmDelete();
+                }, function () {
+                    //点击取消后的回调函数
+                });
+
+
+            });
+        });
+
+        function confirmDelete() {
+            var id = document.URL.split("=")[1];
+            $.ajax({
+                url: "index/deleteOne",
+                type: "POST",
+                dataType: "json",
+                data: {id: id},
+                success: function (data) {
+                    if (data == "ok") {
+                        $.toast("已发送删除申请");
+                        var hhtml = "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
+                        $("#titles").append(hhtml);
+                        $("#deleteOne").remove();
+                    }
+                }
+            });
+        }
+    </script>
 </div>
 
 <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>

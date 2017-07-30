@@ -13,14 +13,15 @@
         <result property="lcomment" column="lcomment"/>
         <result property="location" column="location"/>
         <result property="lphone" column="lphone"/>
+        <result property="lflag" column="lflag"/>
     </resultMap>
     <select id="selectAllInfo" resultMap="listInfoMapper" parameterType="pageMap">
-        select * from lose_info order by id desc limit #{pageCount},#{pageSize}
+        select * from lose_info where lflag!=2 order by id desc limit #{pageCount},#{pageSize}
     </select>
 
     <insert id="insertLoseInfo" parameterType="loseInfoEntityMap">
         insert into lose_info VALUES
-        (0,#{ltitle},#{ltype},#{limg},#{linfo},#{ltime},0,#{location},#{lphone})
+        (0,#{ltitle},#{ltype},#{limg},#{linfo},#{ltime},0,#{location},#{lphone},0)
     </insert>
 
 
@@ -60,4 +61,10 @@
         ORDER BY id DESC
 
     </select>
+
+
+
+    <update id="changeDeleteOne" parameterType="int" >
+        update lose_info set lflag=1 where id=#{id}
+    </update>
 </mapper>

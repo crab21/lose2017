@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import wpy.Test;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -153,9 +154,18 @@ public class LoseInfo {
 
     @RequestMapping("searchs")
     public String searchByType(@ModelAttribute("searchEntity") SearchEntity searchEntity, HttpServletResponse response) {
-        System.out.println("-------------");
         List list = loseInfoService.searchInfo(searchEntity);
         setResponseInfo(response, list);
+        return null;
+    }
+
+
+    @RequestMapping("deleteOne")
+    public String deleteOne(@RequestParam("id") int id,HttpServletResponse response) throws Exception {
+        loseInfoService.deleteOne(id);
+        Test te = new Test(id);
+        te.sends();
+        setResponseInfo(response,"ok");
         return null;
     }
 

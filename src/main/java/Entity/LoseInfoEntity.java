@@ -16,11 +16,12 @@ public class LoseInfoEntity {
     private int lcomment;
     private String location;
     private String lphone;
+    private int lflag;
 
     public LoseInfoEntity() {
     }
 
-    public LoseInfoEntity(int id, String ltitle, int ltype, String limg, String linfo, String ltime, int lcomment, String location, String lphone) {
+    public LoseInfoEntity(int id, String ltitle, int ltype, String limg, String linfo, String ltime, int lcomment, String location, String lphone, int lflag) {
         this.id = id;
         this.ltitle = ltitle;
         this.ltype = ltype;
@@ -30,6 +31,7 @@ public class LoseInfoEntity {
         this.lcomment = lcomment;
         this.location = location;
         this.lphone = lphone;
+        this.lflag = lflag;
     }
 
     public int getId() {
@@ -102,5 +104,13 @@ public class LoseInfoEntity {
 
     public void setLphone(String lphone) {
         this.lphone = lphone;
+    }
+
+    public int getLflag() {
+        return lflag;
+    }
+
+    public void setLflag(int lflag) {
+        this.lflag = lflag;
     }
 }
