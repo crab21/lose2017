@@ -27,8 +27,8 @@ public class SaveFileThread implements Runnable {
     public String saveFile(MultipartFile file, String filename) {
         if (!file.isEmpty()) {
 //            String path = request.getServletContext().getRealPath("/");
-//            String path = "/home/apache-three/webapps/uploadFile";
-            String path = "/home/k/uploadFile";
+            String path = "/home/apache-three/webapps/uploadFile";
+//            String path = "/home/k/uploadFile";
             File filepath = new File(path, filename);
             if (!filepath.getParentFile().exists()) {
                 filepath.getParentFile().mkdirs();

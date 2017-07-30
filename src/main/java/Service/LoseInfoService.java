@@ -26,4 +26,6 @@ public interface LoseInfoService {
     void addCommentCount(int id,int commentCount);
 
     List searchInfo(SearchEntity searchEntity);
+
+    void deleteOne(int id);
 }

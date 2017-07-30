@@ -25,9 +25,9 @@ public class LoseInfoDaoImp implements LoseInfoDao {
     //    主页展示信息
     public List showInfo(Page page) {
         try {
-            System.out.println(page.getPage()+"---------"+page.getPageCount());
-            page.setPageCount((page.getPage()-1)*page.getPageSize());
-            List<LoseInfoEntity> list = sqlSession.selectList("selectAllInfo",page);
+            System.out.println(page.getPage() + "---------" + page.getPageCount());
+            page.setPageCount((page.getPage() - 1) * page.getPageSize());
+            List<LoseInfoEntity> list = sqlSession.selectList("selectAllInfo", page);
             return list;
         } catch (Exception e) {
         }
@@ -73,9 +73,13 @@ public class LoseInfoDaoImp implements LoseInfoDao {
     }
 
     public List selectSearchInfo(SearchEntity searchEntity) {
-        List list = sqlSession.selectList("searchByType",searchEntity);
-        System.out.println(list.size()+"-----------------------");
+        List list = sqlSession.selectList("searchByType", searchEntity);
+        System.out.println(list.size() + "-----------------------");
 
         return list;
+    }
+
+    public void changeDeleteOne(int id) {
+        sqlSession.update("changeDeleteOne", id);
     }
 }
