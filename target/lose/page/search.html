@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明德微校园</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <!--扩展的两个-->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js'
+            charset='utf-8'></script>
+    <!--jQuery-->
+    <script type='text/javascript' src='../js/jquery-2.1.4.js'></script>
+    <link rel="stylesheet" href="../css/demos.css">
+
+    <!--使用cookie-->
+    <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
+
+    <!-- head 中 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+
+    <!--<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>-->
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
+    <!--jQuery结束-->
+
+
+    <script type="text/javascript">
+        $(function () {
+            var searchInput = $.cookie("searchInput");
+            var searchType = $.cookie("searchType");
+            if(searchInput!=null && searchInput!="" && searchInput!= undefined){
+               $("#searchInput").val(searchInput);
+                searchAjax(searchInput,searchType);
+            }
+        });
+
+        function theme_dark() {
+            var dateHour = new Date().getHours();
+            if (dateHour > 20 || dateHour < 7) {
+                $("body").addClass("theme-dark");
+            } else {
+                $("body").removeClass("theme-dark");
+            }
+
+        }
+
+        function weixin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                theme_dark();
+            } else {
+                location.href = "wrong.html";
+            }
+        }
+    </script>
+</head>
+<body onload="weixin();">
+
+<script language="javascript">
+    jQuery(function ($) {
+        var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+        $.getJSON(url, function (data) {
+            $(".card-content-inner").html("您的ip:" + data.Ip + "<br>" + "系统:" + data.OS);
+        });
+    });
+</script>
+
+
+<div class="page">
+    <header class="bar bar-nav">
+        <h1 class="title"><img src="../img/loseTitle.png" width="20px" height="20px">&nbsp;失物招领信息发布中心</h1>
+    </header>
+    <div class="content">
+
+        <div style="display: inline">
+            <div class="weui-cells__title"></div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" style="text-align: center" type="text" placeholder="请选择查询类型"  readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).on("click", ".weui-input", function () {
+                $.actions({
+                    title: "选择搜索内容",
+                    onClose: function () {
+                        console.log("close");
+                    },
+                    actions: [
+                        {
+                            text: "按内容",
+                            className: "color-primary",
+                            onClick: function () {
+                                $(".weui-input").val("按内容");
+                                $("#searchType").html("0");
+                            }
+                        },
+                        {
+                            text: "按地点",
+                            className: 'color-danger',
+                            onClick: function () {
+                                $(".weui-input").val("按地点");
+                                $("#searchType").html("2");
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+        <div class="weui-search-bar" id="searchBar" style="">
+            <form class="weui-search-bar__form" action="javascript:return true;">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" name="searchInput"
+                           placeholder="搜索"
+                           required="">
+                    <a href="javascript:;" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText"
+                       style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+        </div>
+
+        <span style="display: none" id="searchType">0</span>
+        <script>
+            $(function () {
+                $("form").submit(function (e) {
+                    e.preventDefault();
+                    $("#appendContent").empty();
+                    var searchInput = $("#searchInput").val();
+                    var searchType = $("#searchType").html();
+                    searchAjax(searchInput, searchType);
+                });
+            });
+            function searchAjax(searchInput, searchType) {
+                $.ajax({
+                    url: 'index/searchs',
+                    dataType: 'json',
+                    type: 'POST',
+                    data: {"searchInput": searchInput, "searchType": searchType},
+                    success: function (data) {
+                        if (data == null || data == "") {
+                            $.toast("暂无此条消息");
+                        }
+                        if (data != null && data != "") {
+                            $.toast("加载完成", 1000);
+                            ajaxLoadIndex(data);
+                        }
+                    }
+                });
+            }
+
+            function ajaxLoadIndex(data) {
+
+                var html = "";
+                var dlength = data.length;
+                for (var i = 0; i < data.length; ++i) {
+                    var showOne = data[i].id;
+                    html = '<div class="card" id="' + showOne + '" style="display: none"><div class="card-header" style="display: inline-flex">';
+
+                    if (data[i].ltype == 0) {
+                        html += '<img src="../img/失物申报.png" style="height: 20px;display: inline"><font size="3">' + (dlength-i) + '</font>&nbsp;&nbsp;失物申报';
+                    } else {
+                        html += '<img src="../img/失物上交.png" style="height: 20px;display: inline"><font size="3">' + (dlength-i) + '</font> &nbsp;&nbsp;失物上交';
+                    }
+                    html += '</div>'
+                        + '<div class="card-content">'
+                        + '<div class="list-block media-list">'
+                        + '<ul>'
+                        + '<li class="item-content">'
+                        + '<div class="item-media">'
+                        + '<img src="../uploadFile/' + data[i].limg + '" width="44">'
+                        + '</div>'
+                        + '<div class="item-inner">'
+                        + '<div class="item-title-row">'
+                        + '<div class="item-title">' + data[i].ltitle + '</div>'
+                        + '  </div>'
+//                        +'<div class="item-subtitle">子标题</div>'
+                        + '</div>'
+                        + '</li>'
+                        + '</ul>'
+                        + '</div>'
+                        + '</div><a href="javascript:;" id="show_one" onclick="showOnes(' + showOne + ');">'
+                        + '<div class="card-footer">'
+                        + '<span>' + data[i].ltime + '</span>'
+                        + '<span><img src="../img/留言.png" width="22px" height="22px"/>&nbsp;' + data[i].lcomment + '</span>'
+                        + '</div></a></div>';
+                    $("#appendContent").append(html)
+                    $(".card").fadeIn(2000);
+                }
+
+
+            }
+            //主页中点击
+            function showOnes(id) {
+                var searchInput = $("#searchInput").val();
+                var searchType = $("#searchType").html();
+                $.cookie("searchInput", searchInput);
+                $.cookie("searchType", searchType);
+                location.href = "lose_one.html?id=" + id;
+//                var iwidth = $(document.body).outerWidth();
+//                var iheight = $(document.body).outerHeight();
+////                $("#appendContent").css("display", "none");
+//                var html = '<iframe src="' + ipSub + '" width="' + iwidth + '" height="' + iheight + '"></iframe>';
+//                $("#"+id+"").after(html);
+
+            }
+        </script>
+
+        <div id="appendContent">
+
+        </div>
+
+        <div class="card" id="ip">
+            <div class="card-content">
+                <div class="card-content-inner" style="background-color:gray"></div>
+            </div>
+
+        </div>
+
+
+        <br><br>
+
+    </div>
+
+    <nav class="bar bar-tab">
+        <a class="tab-item external active open-panel" href="index.html">
+            <img src="../img/主页.png" style="width: 30px;height: 40px">
+            <!--<span class="tab-label">文案</span>-->
+        </a>
+
+
+        <a class="tab-item external" href="javascript:window.history.back();" id="loadmore">
+            <img src="../img/返回.png" style="width: 30px;height: 40px">
+            <!--<span class="tab-label">文案</span>-->
+        </a>
+    </nav>
+    <script src="../js/fastclick.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
+
+
+</div>
+
+
+</body>
+</html>

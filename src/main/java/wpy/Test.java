@@ -116,4 +116,7 @@ public class Test {
         return message;
     }
 
+    public static void main(String[] args) {
+        System.out.println(new Date().toLocaleString());
+    }
 }

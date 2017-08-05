@@ -1,5 +1,6 @@
 package Controller;
 
+import Controller.biz.WeiRequest;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
 import Entity.Page;
@@ -19,10 +20,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.SimpleFormatter;
 
 /**
  * Created by k on 17-7-6.
@@ -34,6 +39,54 @@ public class LoseInfo {
 
     @Autowired
     private LoseInfoService loseInfoService;
+
+
+    //微信朋友圈分享
+    @RequestMapping("weixinshare")
+    public String weixinshare(@RequestParam("urls")String urls, HttpServletResponse response, HttpServletRequest request) {
+        Map map = new WeiRequest().getAllInfo();
+        map.put("url", urls);
+//        拿到签名
+        String signature = sha1Signature(map);
+        if (signature != null) {
+            map.put("signature", signature);
+
+            setResponseInfo(response, map);
+        } else {
+            setResponseInfo(response, "no");
+        }
+        return null;
+    }
+
+//sha1加密
+
+    public String sha1Signature(Map map) {
+        String signature = "jsapi_ticket=" + map.get("jsapi_ticket") + "&noncestr=" + map.get("noncestr")
+                + "&timestamp=" + map.get("timestamp") + "&url=" + map.get("url");
+        try {
+            //指定sha1算法
+            MessageDigest digest = MessageDigest.getInstance("SHA-1");
+            digest.update(signature.getBytes());
+            //获取字节数组
+            byte messageDigest[] = digest.digest();
+            // Create Hex String
+            StringBuffer hexString = new StringBuffer();
+            // 字节数组转换为 十六进制 数
+            for (int i = 0; i < messageDigest.length; i++) {
+                String shaHex = Integer.toHexString(messageDigest[i] & 0xFF);
+                if (shaHex.length() < 2) {
+                    hexString.append(0);
+                }
+                hexString.append(shaHex);
+            }
+            return hexString.toString().toUpperCase();
+
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 
     //展示主页信息
     @RequestMapping("loseAllInfo")
@@ -80,7 +133,8 @@ public class LoseInfo {
             loseInfoEntity.setLinfo(linfo);
             loseInfoEntity.setLphone(lphone);
 //        给视图模型的前端页面添加数据
-            loseInfoEntity.setLtime(new Date().toLocaleString().toString());
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            loseInfoEntity.setLtime(simpleDateFormat.format(new Date()));
             model.addAttribute("loseInfoEntity", loseInfoEntity);
 
 
@@ -128,8 +182,8 @@ public class LoseInfo {
     @RequestMapping("addComment")
     public String addComment(@ModelAttribute("commentInfoEntity") CommentInfoEntity commentInfoEntity,
                              HttpServletResponse response) {
-
-        commentInfoEntity.setLctime(new Date().toLocaleString());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        commentInfoEntity.setLctime(simpleDateFormat.format(new Date()));
         int commentCount = commentInfoEntity.getId();
         commentInfoEntity.setId(0);
 //  mapInfo有从后台返回的主键
@@ -161,11 +215,11 @@ public class LoseInfo {
 
 
     @RequestMapping("deleteOne")
-    public String deleteOne(@RequestParam("id") int id,HttpServletResponse response) throws Exception {
+    public String deleteOne(@RequestParam("id") int id, HttpServletResponse response) throws Exception {
         loseInfoService.deleteOne(id);
         Test te = new Test(id);
         te.sends();
-        setResponseInfo(response,"ok");
+        setResponseInfo(response, "ok");
         return null;
     }
 

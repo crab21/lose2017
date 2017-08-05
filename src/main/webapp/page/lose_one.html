@@ -6,6 +6,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
 
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
     <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
@@ -31,14 +33,17 @@
     <script>
 
         var page = 0;
-
+        var share_title = "";
+        var share_img = "";
+        var share_id = "";
         function showvalf() {
             var id = document.URL.split("=")[1];
             var flag = false;
             if (isNaN(id)) {
                 var sid = id.substring(0, id.lastIndexOf("#"));
                 if (sid == "") {
-                    id = id.substring(0, id.lastIndexOf("&"));
+                    var wa = id.split("&");
+                    id = wa[0];
                     if (id != "" || id != undefined || !isNaN(id)) {
                         flag = true;
                     }
@@ -46,14 +51,16 @@
                     id = sid;
                     flag = true;
                 }
-            }else {
-                flag=true;
+            } else {
+                flag = true;
             }
+            share_id = id;
+            $.cookie("share_id", share_id);
 
             if (flag) {
                 comment_ajax(id);
-            }else{
-                location.href="index.html";
+            } else {
+                location.href = "index.html";
             }
         }
 
@@ -79,11 +86,14 @@
 
         function addCommentInfo(data) {
             var loseOneInfo = data.loseInfo;
-            $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.ltitle);
+            share_title = loseOneInfo.ltitle;
+            $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + share_title);
             var type = loseOneInfo.ltype;
             if (type == '0') {
                 $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='red'>&nbsp;失物申报</font>");
+                share_title = "申报帖:" + share_title;
             } else {
+                share_title = "上交帖:" + share_title;
                 $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>");
             }
 
@@ -96,8 +106,10 @@
             $("#ltimes").html(loseOneInfo.ltime);
             $("#location > p").html("<img src='../img/form/location.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.location + "<br><img src='../img/form/phone.png' style='width: 25px;height: 25px;'>&nbsp;&nbsp;" + loseOneInfo.lphone);
             $("#lcomment").html("<img src='../img/pinglun.png' id='comment_img'  height='20px' width='20px'>&nbsp;&nbsp;<span id='lcommentCount'>" + loseOneInfo.lcomment + "</span>");
-            if (loseOneInfo.limg != "123.jpg") {
-                var htimg = '<img src="http://119.28.86.177:38080/uploadFile/' + loseOneInfo.limg + '" id="showimg" width="100%" alt="">';
+            share_img = loseOneInfo.limg;
+            if (share_img != "123.jpg") {
+
+                var htimg = '<img src="http://119.28.86.177:38080/uploadFile/' + share_img + '" id="showimg" width="100%" alt="">';
                 $("#bottom").html(htimg);
 
             } else {
@@ -136,11 +148,56 @@
             var ua = window.navigator.userAgent.toLowerCase();
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 showvalf();
+                weixinshare();
             } else {
                 location.href = "wrong.html";
 //                showvalf();
             }
+        }
 
+
+        function weixinshare() {
+            var urls = "http://gradlez.imrcrab.com/lose/page/lose_one.html?id=" + share_id;
+            var locate_url = window.location.href;
+            $.ajax({
+                url: "index/weixinshare",
+                dataType: "json",
+                data: {"urls": locate_url},
+                type: "POST",
+                success: function (data) {
+                    wx.config({
+                        debug: false,
+                        appId: 'wxb959ca08d98bc454',
+                        timestamp: data.timestamp,
+                        nonceStr: data.noncestr,
+                        signature: data.signature,
+                        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+                    });
+                    wx.ready(function () {
+                        // 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+                        wx.onMenuShareTimeline({
+                            title: '明德学院失物招领信息中心', // 分享标题
+                            link: urls,
+                            imgUrl: "http://119.28.86.177:38080/uploadFile/" + share_img + "", // 分享图标
+                        });
+                        // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+                        wx.onMenuShareAppMessage({
+                            title: share_title, // 分享标题
+                            desc: "以媒体之力,让校园更美好   \n©明德微校园", // 分享描述
+                            link: urls,
+                            imgUrl: "http://119.28.86.177:38080/uploadFile/" + share_img + "", // 分享图标
+                            type: 'link', // 分享类型,music、video或link，不填默认为link
+                        });
+                        wx.onMenuShareQQ({
+                            title: share_title, // 分享标题
+                            desc: "以媒体之力,让校园更美好   \n©明德微校园", // 分享描述
+                            link: urls,
+                            imgUrl: "http://119.28.86.177:38080/uploadFile/" + share_img + "", // 分享图标
+                            type: 'link', // 分享类型,music、video或link，不填默认为link
+                        });
+                    });
+                }
+            });
         }
 
     </script>
@@ -224,19 +281,8 @@
 
         <script type="text/javascript">
             $("#add_comment").bind('click', function () {
-                var id = document.URL.split("=")[1];
-                if (isNaN(id)) {
-                    id = id.substring(0, id.lastIndexOf("#"));
-                    if (isNaN(id)) {
-                        $.toast("请不要捣乱");
-                    } else {
-                        confirmComment(id);
-                    }
-                } else {
-                    confirmComment(id);
-                }
-
-
+                var id = $.cookie("share_id");
+                confirmComment(id);
             });
             //    添加评论
             function confirmComment(id) {
