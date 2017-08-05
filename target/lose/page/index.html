@@ -5,8 +5,13 @@
     <title>明德微校园</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
+<<<<<<< HEAD
 
 
+=======
+    <!--分享朋友圈-->
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+>>>>>>> wpy
     <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
@@ -40,6 +45,10 @@
 
         function lo() {
             theme_dark();
+<<<<<<< HEAD
+=======
+            weixinshare();
+>>>>>>> wpy
             ++page;
             $.ajax({
                 url: "index/loseAllInfo",
@@ -58,6 +67,53 @@
             });
         }
 
+<<<<<<< HEAD
+=======
+        function weixinshare() {
+            var imgurls = "http://119.28.86.177:38080/uploadFile/scampus.jpg";
+            var urls = window.location.href;
+            $.ajax({
+                url: "index/weixinshare",
+                dataType: "json",
+                data: {"urls": urls},
+                type: "POST",
+                success: function (data) {
+                    wx.config({
+                        debug: false,
+                        appId: 'wxb959ca08d98bc454',
+                        timestamp: data.timestamp,
+                        nonceStr: data.noncestr,
+                        signature: data.signature,
+                        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+                    });
+                    wx.ready(function () {
+                        // 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+                        wx.onMenuShareTimeline({
+                            title: '明德学院失物招领信息中心', // 分享标题
+                            link: urls,
+                            imgUrl: imgurls // 分享图标
+                        });
+                        // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+                        wx.onMenuShareAppMessage({
+                            title: '明德学院失物招领信息中心', // 分享标题
+                            desc: "以媒体之力,让校园更美好  \n  ©明德微校园", // 分享描述
+                            link: urls,
+                            imgUrl: imgurls, // 分享图标
+                            type: 'link', // 分享类型,music、video或link，不填默认为link
+                        });
+                        wx.onMenuShareQQ({
+                            title: '明德学院失物招领信息中心', // 分享标题
+                            desc: "以媒体之力,让校园更美好 \n  ©明德微校园", // 分享描述
+                            link: urls,
+                            imgUrl: imgurls, // 分享图标
+                            type: 'link', // 分享类型,music、video或link，不填默认为link
+                        });
+                    });
+                }
+            });
+        }
+
+>>>>>>> wpy
 
         function theme_dark() {
             var dateHour = new Date().getHours();
@@ -94,8 +150,17 @@
                     + '</div>'
                     + '<div class="item-inner">'
                     + '<div class="item-title-row">'
+<<<<<<< HEAD
                     + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>'
                     + '  </div>'
+=======
+                    + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>';
+                if (data[i].lflag == 1) {
+                    html += "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
+                }
+
+                html += '  </div>'
+>>>>>>> wpy
 //                        +'<div class="item-subtitle">子标题</div>'
                     + '</div>'
                     + '</li>'
@@ -125,6 +190,11 @@
                 location.href = "wrong.html";
             }
         }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> wpy
     </script>
 
 </head>

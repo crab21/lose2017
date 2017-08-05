@@ -7,8 +7,14 @@ Dao/LoseInfoDao.class
 Controller/LoseInfo.class
 Service/Componment/FileUploadProgressListener.class
 Service/Componment/CustomMultipartResolver.class
+<<<<<<< HEAD
 Controller/Index.class
 Service/Componment/ProgressEntity.class
+=======
+Controller/WeixinUnit.class
+Service/Componment/ProgressEntity.class
+Controller/biz/WeiRequest.class
+>>>>>>> wpy
 Service/LoseInfoService.class
 Entity/LoseInfoEntity.class
 Entity/CommentInfoEntity.class
