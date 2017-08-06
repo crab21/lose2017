@@ -25,4 +25,6 @@ public interface LoseInfoDao {
     List selectSearchInfo(SearchEntity searchEntity);
 
     void changeDeleteOne(int id);
+
+    void deleteOneCommentById(int id);
 }

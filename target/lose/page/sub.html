@@ -42,7 +42,7 @@
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 theme_dark();
             } else {
-                location.href = "wrong.html";
+//                location.href = "wrong.html";
             }
         }
     </script>
@@ -168,18 +168,23 @@
             <!--图片预览-->
             $("#file").on('change', function () {
 
-                if (typeof (FileReader) != "undefined") {
+                    if (typeof (FileReader) != "undefined") {
 
-                    var reader = new FileReader();
-                    reader.readAsDataURL($(this)[0].files[0]);
-                    reader.onload = function (e) {
-                        var urls = e.target.result;
-                        $(".weui-uploader__file").css("background-image", "url('" + urls + "')");
+                        var reader = new FileReader();
+                        reader.readAsDataURL($(this)[0].files[0]);
+                        reader.onload = function (e) {
+//                            alert(e.target.result);
+                            if (reader.size > (1024 * 1024 * 3)) {
+                                $.toast("文件过大");
+                            }
+                            $(".weui-uploader__file").css("background-image", "url('" + e.target.result + "')");
+                        }
                     }
-                } else {
-                    alert("你的浏览器不支持FileReader.");
+                    else {
+                        alert("你的浏览器不支持FileReader.");
+                    }
                 }
-            });
+            );
         </script>
 
     </form>
@@ -188,7 +193,7 @@
         $(document).ready(function () {
             $("#lphone").focus(function () {
                 $(this).val("");
-                $(this).css("color","");
+                $(this).css("color", "");
             });
 
             $("#sub").bind('click', function () {
@@ -207,13 +212,18 @@
                             if (index == 3) {
                                 if (!(/^1[34578]\d{9}$/.test(valus))) {
                                     inputObj.css("color", "red");
-                                    flagCount-=50;
+                                    flagCount -= 50;
                                 }
                             }
                             formdata.append($(this).attr("name"), valus);
                         }
                     } else {
-                        formdata.append($(this).attr("name"), $(this)[0].files[0]);
+                        var file = $(this)[0].files[0];
+                        if (file.size > (1024 * 1024 * 3)) {
+                            $.toast("文件不能超过3M");
+                            flagCount += 100;
+                        }
+                        formdata.append($(this).attr("name"), file);
                     }
                 });
                 if (flagCount == 0) {
@@ -223,7 +233,7 @@
                 if (flagCount > 0) {
                     $.toptip("请将信息填写完整", "error");
                 }
-                if(flagCount < 0){
+                if (flagCount < 0) {
                     $.toptip("请重新填写红色字体处", "error");
                 }
             });

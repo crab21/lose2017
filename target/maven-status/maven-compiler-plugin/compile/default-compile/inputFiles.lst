@@ -11,6 +11,7 @@
 /home/k/code/jwork/lose/src/main/java/Service/LoseInfoServiceImp.java
 /home/k/code/jwork/lose/src/main/java/Service/LoseInfoService.java
 /home/k/code/jwork/lose/src/main/java/Controller/SaveFileThread.java
+/home/k/code/jwork/lose/src/main/java/Controller/biz/ImgCompress.java
 /home/k/code/jwork/lose/src/main/java/Entity/LoseInfoEntity.java
 /home/k/code/jwork/lose/src/main/java/Service/Componment/FileUploadProgressListener.java
 /home/k/code/jwork/lose/src/main/java/Dao/LoseInfoDao.java

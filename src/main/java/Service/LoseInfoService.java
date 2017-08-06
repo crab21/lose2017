@@ -28,4 +28,6 @@ public interface LoseInfoService {
     List searchInfo(SearchEntity searchEntity);
 
     void deleteOne(int id);
+
+    void deleteOneComment(int id);
 }

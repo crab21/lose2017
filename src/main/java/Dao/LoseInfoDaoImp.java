@@ -82,4 +82,8 @@ public class LoseInfoDaoImp implements LoseInfoDao {
     public void changeDeleteOne(int id) {
         sqlSession.update("changeDeleteOne", id);
     }
+
+    public void deleteOneCommentById(int id) {
+        sqlSession.delete("deleteOneCommentById",id);
+    }
 }

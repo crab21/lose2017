@@ -67,4 +67,9 @@
     <update id="changeDeleteOne" parameterType="int" >
         update lose_info set lflag=1 where id=#{id}
     </update>
+
+
+    <delete id="deleteOneCommentById" parameterType="int">
+        delete from comment_info where id=#{id}
+    </delete>
 </mapper>

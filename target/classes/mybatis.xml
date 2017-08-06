@@ -18,4 +18,9 @@
         <typeAlias alias="loseInfoEntityMap" type="Entity.LoseInfoEntity"/>
         <typeAlias alias="pageMap" type="Entity.Page"/>
     </typeAliases>
+    <!--<mappers>-->
+        <!--&lt;!&ndash; 使用这个方案，可以单独指定Mapper的位置 &ndash;&gt;-->
+        <!--<mapper resource="mapper/LoseInfo.xml"/>-->
+        <!--<mapper resource="mapper/Manage.xml"/>-->
+    <!--</mappers>-->
 </configuration>
