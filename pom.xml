@@ -203,13 +203,6 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.netbeans.api/org-netbeans-api-progress -->
-        <dependency>
-            <groupId>org.netbeans.api</groupId>
-            <artifactId>org-netbeans-api-progress</artifactId>
-            <version>RELEASE731</version>
-        </dependency>
-
 
         <!--Java发送邮件的jar-->
         <dependency>
@@ -219,8 +212,38 @@
         </dependency>
 
 
+
+        <!--外部引入的jar包-->
+        <dependency>
+            <groupId>com.wpy</groupId>
+            <artifactId>rt</artifactId>
+            <version>1.1.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/rt.jar
+            </systemPath>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>lose</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${project.basedir}/lib</directory>
+                            <targetPath>WEB-INF/lib</targetPath>
+                            <filtering>false</filtering>
+                            <includes>
+                                <include>**/*.jar</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                </configuration>
+                <version>2.1.1</version>
+            </plugin>
+        </plugins>
     </build>
 </project>

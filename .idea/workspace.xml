@@ -5,6 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/css" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a5b4c828-290e-4bb2-ad75-ebd43b6e4ddc" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Controller/Index.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/shenhezhong.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/shenhezhong.png" />
@@ -75,6 +76,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page/lose_one.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/lose_one.html" />
 >>>>>>> wpy
     </list>
+=======
+    <list default="true" id="a5b4c828-290e-4bb2-ad75-ebd43b6e4ddc" name="Default" comment="" />
+>>>>>>> wpy
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +92,7 @@
     <SUITE FILE_PATH="coverage/lose$Test.coverage" NAME="Test Coverage Results" MODIFIED="1499744711385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>wpy.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lose$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1501298445062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/lose$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1502036018264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -105,24 +109,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoseInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/LoseInfo.java">
+      <file leaf-file-name="ManageDaoImp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ManageDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
             <state relative-caret-position="1224">
               <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
 =======
             <state relative-caret-position="306">
+<<<<<<< HEAD
               <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
 >>>>>>> wpy
               <folding />
+=======
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> wpy
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinUnit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/WeixinUnit.java">
+      <file leaf-file-name="Manage.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/Manage.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="238">
               <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
@@ -134,13 +146,21 @@
               <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
 >>>>>>> wpy
+=======
+            <state relative-caret-position="85">
+              <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+              <folding>
+                <marker date="1502035964933" expanded="true" signature="268:317" ph="update lose_... " />
+              </folding>
+>>>>>>> wpy
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveFileThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/SaveFileThread.java">
+      <file leaf-file-name="LoseInfoDaoImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="324">
               <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
@@ -152,12 +172,17 @@
 =======
             <state relative-caret-position="561">
               <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+=======
+            <state relative-caret-position="153">
+              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="14" />
+>>>>>>> wpy
               <folding />
 >>>>>>> wpy
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/page/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -168,54 +193,36 @@
 =======
             <state relative-caret-position="459">
               <caret line="75" column="23" lean-forward="false" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+=======
+      <file leaf-file-name="ManageServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Service/ManageServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+>>>>>>> wpy
               <folding>
-                <marker date="1501942112715" expanded="true" signature="4999:5012" ph="..." />
-                <marker date="1501942112715" expanded="true" signature="5046:5066" ph="..." />
-                <marker date="1501942112715" expanded="true" signature="5177:5205" ph="..." />
-                <marker date="1501942112715" expanded="true" signature="5247:5253" ph="&amp;nbsp;" />
-                <marker date="1501942112715" expanded="true" signature="5253:5259" ph="&amp;nbsp;" />
-                <marker date="1501942112715" expanded="true" signature="5354:5382" ph="..." />
-                <marker date="1501942112715" expanded="true" signature="5425:5431" ph="&amp;nbsp;" />
-                <marker date="1501942112715" expanded="true" signature="5431:5437" ph="&amp;nbsp;" />
-                <marker date="1501942112715" expanded="true" signature="6051:6065" ph="..." />
-                <marker date="1501942112715" expanded="true" signature="6236:6248" ph="..." />
-                <marker date="1501942112715" expanded="true" signature="6859:6865" ph="&amp;nbsp;" />
+                <element signature="imports" expanded="true" />
               </folding>
 >>>>>>> wpy
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wrong.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/wrong.html">
+      <file leaf-file-name="ManageDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ManageDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoseInfoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java">
+      <file leaf-file-name="spring-mybatis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sub.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/sub.html">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="714">
-              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-=======
-            <state relative-caret-position="374">
-              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
->>>>>>> wpy
+            <state relative-caret-position="280">
+              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -224,6 +231,27 @@
       <file leaf-file-name="LoseInfoServiceImp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/LoseInfoServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="714">
+              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+=======
+            <state relative-caret-position="374">
+              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+>>>>>>> wpy
+=======
+            <state relative-caret-position="442">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+>>>>>>> wpy
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage_one.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage_one.html">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="969">
               <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="64" selection-end-column="9" />
@@ -238,14 +266,39 @@
                 <element signature="e#1378#1379#0" expanded="true" />
                 <element signature="e#1443#1444#0" expanded="true" />
 >>>>>>> wpy
+=======
+            <state relative-caret-position="668">
+              <caret line="428" column="25" lean-forward="false" selection-start-line="428" selection-start-column="25" selection-end-line="428" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1502030139334" expanded="true" signature="3312:3323" ph="..." />
+                <marker date="1502030139334" expanded="true" signature="3325:3331" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="3331:3337" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="3563:3569" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="3846:3852" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="4055:4067" ph="..." />
+                <marker date="1502030139334" expanded="true" signature="4370:4381" ph="..." />
+                <marker date="1502030139334" expanded="true" signature="4383:4389" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="4389:4395" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="4467:4492" ph="..." />
+                <marker date="1502030139334" expanded="true" signature="4494:4500" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="4500:4506" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="4639:4645" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="4645:4651" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="5976:5982" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="5982:5988" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="13890:13896" ph="&amp;nbsp;" />
+                <marker date="1502030139334" expanded="true" signature="13896:13902" ph="&amp;nbsp;" />
+>>>>>>> wpy
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/search.html">
+      <file leaf-file-name="mybatis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="1003">
               <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
@@ -259,13 +312,19 @@
                 <element signature="n#style#0;n#img#0;n#a#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
 >>>>>>> wpy
+=======
+            <state relative-caret-position="425">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding />
+>>>>>>> wpy
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lose_one.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/lose_one.html">
+      <file leaf-file-name="LoseInfoDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="2465">
               <caret line="145" column="31" lean-forward="false" selection-start-line="145" selection-start-column="31" selection-end-line="145" selection-end-column="31" />
@@ -297,6 +356,11 @@
                 <marker date="1501947646277" expanded="true" signature="22388:22400" ph="..." />
 >>>>>>> wpy
               </folding>
+=======
+            <state relative-caret-position="374">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="8" />
+              <folding />
+>>>>>>> wpy
             </state>
           </provider>
         </entry>
@@ -308,17 +372,15 @@
       <list>
         <option value="package-info" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>title</find>
-      <find>content</find>
       <find>weui-popup-modal</find>
       <find>icon icon-message</find>
       <find>panel-overlay</find>
@@ -347,6 +409,8 @@
       <find>关闭</find>
       <find>colength</find>
       <find>urls</find>
+      <find>lose_content</find>
+      <find>addCommentCount</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -360,57 +424,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/hello.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/helloworld.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/Info.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/TestLoadService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/LoseInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/lose_one.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/CommentInfoEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/jquery-2.1.4.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/Componment/CustomMultipartResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/Componment/FileUploadProgressListener.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/load.css" />
         <option value="$PROJECT_DIR$/src/main/java/Service/Componment/ProgressEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/Page.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/pagestyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/fullscreenstyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/fullscreenslides.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/picfull/jquery.fancybox.css" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/searchEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/LoseInfoServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDaoImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/LoseInfoEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/wpy/Tst.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/jump.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/inde.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/SaveFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/addLoseInfoThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/SaveFileThread.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/searchlose_one.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/wrong.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/search.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/sub.html" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/WeixinUnit.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Index.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/biz/WeiRequest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/wpy/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/LoseInfo.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/lose_one.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/biz/ImgCompress.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/sub.html" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/SaveFileThread.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/manager.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/search.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/manage.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jump/manage_jump.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/manage_index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/LoseInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/LoseInfoServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/biz/addLoseInfoThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/biz/WeixinUnit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/ManageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/ManageDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/manage_one.html" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/ManageServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/ManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/Manage.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/ManageDaoImp.java" />
       </list>
     </option>
   </component>
@@ -518,6 +582,7 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -539,6 +604,30 @@
       <pane id="PackagesPane" />
 =======
 >>>>>>> wpy
+      <pane id="ProjectPane">
+        <subPane>
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Production">
+>>>>>>> wpy
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lose">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -621,32 +710,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uploadFile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -673,7 +736,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="jump" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,63 +792,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="picfull" />
+              <option name="myItemId" value="manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -858,10 +865,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wpy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -886,36 +889,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lose" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Componment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1030,6 +1003,7 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scratches" />
 =======
       <pane id="PackagesPane" />
@@ -1053,6 +1027,8 @@
         </subPane>
       </pane>
 >>>>>>> wpy
+=======
+>>>>>>> wpy
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1066,19 +1042,21 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/page" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/img/form" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Entity" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Dao" />
+      <recent name="Service" />
+      <recent name="Entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/img/manage" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/page" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1093,7 +1071,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1102,26 +1080,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="wpy.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lose" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Page" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Entity.Page" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1215,6 +1173,26 @@
           <artifact name="lose:war" />
         </option>
       </method>
+    </configuration>
+    <configuration default="false" name="ImgCompress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Controller.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Controller.biz.ImgCompress" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lose" />
+      <envs />
+      <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
@@ -1713,18 +1691,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Page" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Tst" />
-      <item index="4" class="java.lang.String" itemvalue="Application.WeiRequest" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Tst" />
+      <item index="3" class="java.lang.String" itemvalue="Application.WeiRequest" />
+      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.index.html" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ImgCompress" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WeiRequest" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.html" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Tst" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Page" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ImgCompress" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.WeiRequest" />
+        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.html" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Tst" />
       </list>
     </recent_temporary>
   </component>
@@ -1762,15 +1740,24 @@
       <workItem from="1501299898186" duration="42000" />
 =======
       <workItem from="1501918068731" duration="19940000" />
+<<<<<<< HEAD
+>>>>>>> wpy
+=======
+      <workItem from="1501978683235" duration="4607000" />
+      <workItem from="1501983332405" duration="22306000" />
 >>>>>>> wpy
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="300087000" />
 =======
     <option name="totallyTimeSpent" value="319774000" />
+>>>>>>> wpy
+=======
+    <option name="totallyTimeSpent" value="346687000" />
 >>>>>>> wpy
   </component>
   <component name="TodoView">
@@ -1793,11 +1780,16 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998565" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.45118344" order="3" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.45118344" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> wpy
+=======
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.44530046" order="3" side_tool="false" content_ui="tabs" />
 >>>>>>> wpy
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1807,6 +1799,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
 =======
@@ -1814,10 +1807,16 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3204023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> wpy
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.742681" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31895223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> wpy
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6355811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1830,6 +1829,14 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22803031" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6348228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287879" sideWeight="0.55469954" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266564" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23560606" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> wpy
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22803031" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 >>>>>>> wpy
@@ -1841,9 +1848,12 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32137734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.54881656" order="4" side_tool="true" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> wpy
 =======
 >>>>>>> wpy
     </layout>
@@ -1901,6 +1911,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -2067,177 +2078,7 @@
         <state relative-caret-position="381">
           <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="50" selection-end-line="76" selection-end-column="63" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/SearchEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/core-scripting.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/LoseInfoEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-<<<<<<< HEAD
 =======
-          <folding>
-            <element signature="e#968#969#0" expanded="false" />
-            <element signature="e#997#998#0" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1973#1974#0" expanded="false" />
-            <element signature="e#2053#2054#0" expanded="false" />
-          </folding>
->>>>>>> wpy
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#1623#1641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpy/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> wpy
-    <entry file="jar://$PROJECT_DIR$/../../java/jdk1.8.0_131/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="1334" column="22" lean-forward="false" selection-start-line="1334" selection-start-column="22" selection-end-line="1334" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../java/jdk1.8.0_131/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="492" column="35" lean-forward="false" selection-start-line="492" selection-start-column="35" selection-end-line="492" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="3666" column="20" lean-forward="true" selection-start-line="3666" selection-start-column="20" selection-end-line="3666" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpy/Tst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2104">
-          <caret line="2345" column="9" lean-forward="true" selection-start-line="2345" selection-start-column="9" selection-end-line="2345" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/jump.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/searchlose_one.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding>
-            <element signature="n#servlet-mapping#4;n#web-app#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/inde.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Index.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-=======
-        <state relative-caret-position="100">
-          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding />
->>>>>>> wpy
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/WeiRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="119" column="39" lean-forward="false" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3271#3272#0" expanded="true" />
-            <element signature="e#3342#3343#0" expanded="true" />
-            <element signature="e#3387#3388#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/返回.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/img/认领确认.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2251,6 +2092,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/img/aboutUs.png">
       <provider selected="true" editor-type-id="images">
         <state />
+>>>>>>> wpy
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/img/bodyBg2.jpg">
@@ -2318,8 +2160,287 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/WeiRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="442">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+<<<<<<< HEAD
+=======
+=======
+        <state relative-caret-position="1955">
+          <caret line="119" column="39" lean-forward="false" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
+>>>>>>> wpy
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+>>>>>>> wpy
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="221" column="53" lean-forward="false" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/ImgCompress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#381#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wpy/Test.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> wpy
+    <entry file="jar://$PROJECT_DIR$/../../java/jdk1.8.0_131/src.zip!/java/lang/Math.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpy/Tst.java">
+>>>>>>> wpy
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpy/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="e#4316#4317#0" expanded="false" />
+            <element signature="e#4379#4380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/wrong.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="163" column="6" lean-forward="true" selection-start-line="163" selection-start-column="6" selection-end-line="166" selection-end-column="9" />
+          <folding>
+            <marker date="1501948092256" expanded="true" signature="4999:5012" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="5046:5066" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="5177:5205" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="5247:5253" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="5253:5259" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="5354:5382" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="5425:5431" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="5431:5437" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="6051:6065" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="6236:6248" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="6859:6865" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/lose_one.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-2104">
+          <caret line="2345" column="9" lean-forward="true" selection-start-line="2345" selection-start-column="9" selection-end-line="2345" selection-end-column="9" />
+=======
+        <state relative-caret-position="442">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="558" selection-end-column="7" />
+          <folding>
+            <marker date="1501948092256" expanded="true" signature="3312:3323" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="3325:3331" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="3331:3337" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="3563:3569" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="3846:3852" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="4055:4067" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="4370:4381" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="4383:4389" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="4389:4395" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="4467:4492" ph="..." />
+            <marker date="1501948092256" expanded="true" signature="4494:4500" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="4500:4506" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="4639:4645" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="4645:4651" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="5849:5855" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="5855:5861" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="13180:13186" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="13186:13192" ph="&amp;nbsp;" />
+            <marker date="1501948092256" expanded="true" signature="22388:22400" ph="..." />
+          </folding>
+>>>>>>> wpy
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jump/manage_jump.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/addLoseInfoThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/WeixinUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="136">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+=======
+        <state relative-caret-position="100">
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+=======
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+>>>>>>> wpy
+          <folding />
+>>>>>>> wpy
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="189" column="75" lean-forward="false" selection-start-line="189" selection-start-column="75" selection-end-line="189" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1501990063588" expanded="true" signature="7097:7110" ph="..." />
+            <marker date="1501990063588" expanded="true" signature="7144:7164" ph="..." />
+            <marker date="1501990063588" expanded="true" signature="7283:7311" ph="..." />
+            <marker date="1501990063588" expanded="true" signature="7354:7360" ph="&amp;nbsp;" />
+            <marker date="1501990063588" expanded="true" signature="7360:7366" ph="&amp;nbsp;" />
+            <marker date="1501990063588" expanded="true" signature="7469:7497" ph="..." />
+            <marker date="1501990063588" expanded="true" signature="7541:7547" ph="&amp;nbsp;" />
+            <marker date="1501990063588" expanded="true" signature="7547:7553" ph="&amp;nbsp;" />
+            <marker date="1501990063588" expanded="true" signature="8767:8773" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/sub.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="274" column="38" lean-forward="true" selection-start-line="274" selection-start-column="38" selection-end-line="274" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <marker date="1502026326052" expanded="true" signature="3078:3091" ph="..." />
+            <marker date="1502026326052" expanded="true" signature="3125:3145" ph="..." />
+            <marker date="1502026326052" expanded="true" signature="3256:3284" ph="..." />
+            <marker date="1502026326052" expanded="true" signature="3326:3332" ph="&amp;nbsp;" />
+            <marker date="1502026326052" expanded="true" signature="3332:3338" ph="&amp;nbsp;" />
+            <marker date="1502026326052" expanded="true" signature="3433:3461" ph="..." />
+            <marker date="1502026326052" expanded="true" signature="3504:3510" ph="&amp;nbsp;" />
+            <marker date="1502026326052" expanded="true" signature="3510:3516" ph="&amp;nbsp;" />
+            <marker date="1502026326052" expanded="true" signature="3944:3958" ph="..." />
+            <marker date="1502026326052" expanded="true" signature="4129:4141" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/ManageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="238">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
@@ -2331,11 +2452,17 @@
             <element signature="e#4316#4317#0" expanded="true" />
             <element signature="e#4379#4380#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="-100">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+>>>>>>> wpy
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/addLoseInfoThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="1224">
           <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
@@ -2343,10 +2470,15 @@
         <state relative-caret-position="476">
           <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
 >>>>>>> wpy
+=======
+        <state relative-caret-position="136">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="19" />
+>>>>>>> wpy
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/searchlose_one.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml">
@@ -2355,51 +2487,97 @@
           <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
 =======
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ManageController.java">
+>>>>>>> wpy
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="31" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <marker date="1502027926781" expanded="true" signature="878:964" ph="select * fro... lose_info" />
+            <marker date="1502027926781" expanded="true" signature="1055:1166" ph="insert into lose_info... " />
+            <marker date="1502027926781" expanded="true" signature="1278:1316" ph="select * fro... lose_info" />
+            <marker date="1502027926781" expanded="true" signature="1773:1832" ph="select * fro... comment_info" />
+            <marker date="1502027926781" expanded="true" signature="1966:2046" ph="insert into comment_info... " />
+            <marker date="1502027926781" expanded="true" signature="2132:2192" ph="update lose_... " />
+            <marker date="1502027926781" expanded="true" signature="2326:2607" ph="select * fro... lose_info" />
+            <marker date="1502027926781" expanded="true" signature="2689:2732" ph="update lose_... " />
+            <marker date="1502027926781" expanded="true" signature="2816:2855" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+>>>>>>> wpy
+=======
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+>>>>>>> wpy
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage_one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="428" column="25" lean-forward="false" selection-start-line="428" selection-start-column="25" selection-end-line="428" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502030139334" expanded="true" signature="3312:3323" ph="..." />
+            <marker date="1502030139334" expanded="true" signature="3325:3331" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="3331:3337" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="3563:3569" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="3846:3852" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="4055:4067" ph="..." />
+            <marker date="1502030139334" expanded="true" signature="4370:4381" ph="..." />
+            <marker date="1502030139334" expanded="true" signature="4383:4389" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="4389:4395" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="4467:4492" ph="..." />
+            <marker date="1502030139334" expanded="true" signature="4494:4500" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="4500:4506" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="4639:4645" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="4645:4651" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="5976:5982" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="5982:5988" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="13890:13896" ph="&amp;nbsp;" />
+            <marker date="1502030139334" expanded="true" signature="13896:13902" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/LoseInfoDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/LoseInfoServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/WeixinUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
->>>>>>> wpy
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/LoseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/SaveFileThread.java">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="2465">
           <caret line="145" column="31" lean-forward="false" selection-start-line="145" selection-start-column="31" selection-end-line="145" selection-end-column="31" />
@@ -2409,32 +2587,27 @@
 =======
         <state relative-caret-position="561">
           <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+=======
+        <state relative-caret-position="442">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+>>>>>>> wpy
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/ManageServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="75" column="23" lean-forward="false" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
-            <marker date="1501942112715" expanded="true" signature="4999:5012" ph="..." />
-            <marker date="1501942112715" expanded="true" signature="5046:5066" ph="..." />
-            <marker date="1501942112715" expanded="true" signature="5177:5205" ph="..." />
-            <marker date="1501942112715" expanded="true" signature="5247:5253" ph="&amp;nbsp;" />
-            <marker date="1501942112715" expanded="true" signature="5253:5259" ph="&amp;nbsp;" />
-            <marker date="1501942112715" expanded="true" signature="5354:5382" ph="..." />
-            <marker date="1501942112715" expanded="true" signature="5425:5431" ph="&amp;nbsp;" />
-            <marker date="1501942112715" expanded="true" signature="5431:5437" ph="&amp;nbsp;" />
-            <marker date="1501942112715" expanded="true" signature="6051:6065" ph="..." />
-            <marker date="1501942112715" expanded="true" signature="6236:6248" ph="..." />
-            <marker date="1501942112715" expanded="true" signature="6859:6865" ph="&amp;nbsp;" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/lose_one.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
           <caret line="173" column="45" lean-forward="false" selection-start-line="173" selection-start-column="45" selection-end-line="173" selection-end-column="45" />
           <folding>
@@ -2459,11 +2632,17 @@
             <marker date="1501947646277" expanded="true" signature="22388:22400" ph="..." />
 >>>>>>> wpy
           </folding>
+=======
+        <state relative-caret-position="280">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding />
+>>>>>>> wpy
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/search.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/Manage.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="969">
           <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="64" selection-end-column="9" />
@@ -2471,16 +2650,19 @@
         <state relative-caret-position="408">
           <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
 >>>>>>> wpy
+=======
+        <state relative-caret-position="85">
+          <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+>>>>>>> wpy
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502035964933" expanded="true" signature="268:317" ph="update lose_... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/sub.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ManageDao.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="714">
           <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
@@ -2488,10 +2670,15 @@
         <state relative-caret-position="374">
           <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
 >>>>>>> wpy
+=======
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+>>>>>>> wpy
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/SaveFileThread.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2516,6 +2703,15 @@
           <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
 >>>>>>> wpy
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ManageDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> wpy
         </state>
       </provider>
     </entry>

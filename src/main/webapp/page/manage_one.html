@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明德微校园</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
+
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js'
+            charset='utf-8'></script>
+    <script type='text/javascript' src='../js/jquery-2.1.4.js'></script>
+    <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
+
+    <!--jQuery-->
+    <!-- head 中 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
+    <!--jQuery结束-->
+    <script>
+
+        var page = 0;
+        var share_title = "";
+        var share_img = "";
+        var share_id = "";
+        function showvalf() {
+            var id = document.URL.split("=")[1];
+            var flag = false;
+            if (isNaN(id)) {
+                var sid = id.substring(0, id.lastIndexOf("#"));
+                if (sid == "") {
+                    var wa = id.split("&");
+                    id = wa[0];
+                    if (id != "" || id != undefined || !isNaN(id)) {
+                        flag = true;
+                    }
+                } else {
+                    id = sid;
+                    flag = true;
+                }
+            } else {
+                flag = true;
+            }
+            share_id = id;
+            $.cookie("share_id", share_id);
+
+            if (flag) {
+                comment_ajax(id);
+            } else {
+                location.href = "index.html";
+            }
+        }
+
+
+        function comment_ajax(id) {
+            $.ajax({
+                url: 'index/showOne',
+                type: 'POST',
+                dataType: 'json',
+                data: {'id': id},
+                success: function (data) {
+                    if (data.flag != null && data.flag != undefined && data.flag != "") {
+                        $(".content").remove();
+                        $.toast(data.flag);
+
+                    } else {
+                        addCommentInfo(data);
+                    }
+                }
+            });
+        }
+
+
+        function addCommentInfo(data) {
+            var loseOneInfo = data.loseInfo;
+            share_title = loseOneInfo.ltitle;
+            $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + share_title);
+            var type = loseOneInfo.ltype;
+            if (type == '0') {
+                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='red'>&nbsp;失物申报</font>");
+                share_title = "申报帖:" + share_title;
+            } else {
+                share_title = "上交帖:" + share_title;
+                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>");
+            }
+
+            $(".card-content-inner > p").html("&nbsp;&nbsp;&nbsp; " + loseOneInfo.linfo);
+            if (loseOneInfo.lflag == 1) {
+                var hhtml = "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
+                $("#titles").append(hhtml);
+                $("#deleteOne").remove();
+            }
+            $("#ltimes").html(loseOneInfo.ltime);
+            $("#location > p").html("<img src='../img/form/location.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.location + "<br><img src='../img/form/phone.png' style='width: 25px;height: 25px;'>&nbsp;&nbsp;" + loseOneInfo.lphone);
+            $("#lcomment").html("<img src='../img/pinglun.png' id='comment_img'  height='20px' width='20px'>&nbsp;&nbsp;<span id='lcommentCount'>" + loseOneInfo.lcomment + "</span>");
+            share_img = loseOneInfo.limg;
+            if (share_img != "123.jpg") {
+
+                var htimg = '<img src="http://119.28.86.177:38080/uploadFile/' + share_img + '" id="showimg" width="100%" alt="">';
+                $("#bottom").html(htimg);
+
+            } else {
+                $("#bottom-father").remove();
+            }
+//            添加评论
+            var commentInfo = data.commentInfo;
+            if (commentInfo.length > 0) {
+                var colength = commentInfo.length;
+                $.cookie("colength", colength);
+                var co_html = "";
+                for (var i = 0; i < commentInfo.length; ++i) {
+                    var ids = commentInfo[i].id;
+                    var j = colength - i;
+                    co_html += '<div class="card" id=' + ids + '>' +
+                        '<div class="card-footer">' +
+                        '<span>' + j + '#<a href="javascript:;" onclick="deleteById(' + ids + ')">删除</a></span>' +
+                        '<span>' + commentInfo[i].lctime + '</span>' +
+                        '</div>' +
+                        '<div class="card-content">' +
+                        '<div class="card-content-inner">' +
+                        '<span class="icon icon-message"></span>&nbsp;&nbsp;' +
+                        '' + commentInfo[i].lcommentInfo + '' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+
+                }
+                $("#comment_div").after(co_html);
+            } else {
+                $.cookie("colength", 0);
+            }
+        }
+
+        //删除评论信息
+        function deleteById(id) {
+            alert(id);
+            $.confirm("确认删除此条评论吗？", function () {
+                deleteCommentById(id);
+            }, function () {
+
+            });
+
+        }
+        //具体的删除方法
+        function deleteCommentById(id) {
+            $.ajax({
+                url: "index/deleteCommentById",
+                dataType: "json",
+                type: "POST",
+                data: {"id": id},
+                success: function (data) {
+                    if (data == "ok") {
+                        $.toast("删除成功");
+                    }
+                }
+            });
+            $("#" + id + "").remove();
+        }
+
+        function weixin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                showvalf();
+                weixinshare();
+            } else {
+//                location.href = "wrong.html";
+                showvalf();
+            }
+        }
+
+
+        function weixinshare() {
+            var urls = "http://gradlez.imrcrab.com/lose/page/lose_one.html?id=" + share_id;
+            var locate_url = window.location.href;
+            $.ajax({
+                url: "index/weixinshare",
+                dataType: "json",
+                data: {"urls": locate_url},
+                type: "POST",
+                success: function (data) {
+                    wx.config({
+                        debug: false,
+                        appId: 'wxb959ca08d98bc454',
+                        timestamp: data.timestamp,
+                        nonceStr: data.noncestr,
+                        signature: data.signature,
+                        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+                    });
+                    wx.ready(function () {
+                        // 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+                        wx.onMenuShareTimeline({
+                            title: '明德学院失物招领信息中心', // 分享标题
+                            link: urls,
+                            imgUrl: "http://119.28.86.177:38080/uploadFile/" + share_img + "", // 分享图标
+                        });
+                        // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+                        wx.onMenuShareAppMessage({
+                            title: share_title, // 分享标题
+                            desc: "以媒体之力,让校园更美好   \n©明德微校园", // 分享描述
+                            link: urls,
+                            imgUrl: "http://119.28.86.177:38080/uploadFile/" + share_img + "", // 分享图标
+                            type: 'link', // 分享类型,music、video或link，不填默认为link
+                        });
+                        wx.onMenuShareQQ({
+                            title: share_title, // 分享标题
+                            desc: "以媒体之力,让校园更美好   \n©明德微校园", // 分享描述
+                            link: urls,
+                            imgUrl: "http://119.28.86.177:38080/uploadFile/" + share_img + "", // 分享图标
+                            type: 'link', // 分享类型,music、video或link，不填默认为link
+                        });
+                    });
+                }
+            });
+        }
+
+    </script>
+
+    <script>
+        $(function () {
+            var dateHour = new Date().getHours();
+            if (dateHour > 20 || dateHour < 7) {
+                $("body").addClass("theme-dark");
+                $("#choose_dark").attr("checked", true);
+            } else {
+                $("body").removeClass("theme-dark");
+                $("#choose_dark").attr("checked", false);
+            }
+
+        })
+    </script>
+
+</head>
+<body class="" onload="weixin()">
+<div class="page">
+
+    <header class="bar bar-nav">
+        <h1 class="title">没有此条信息</h1>
+    </header>
+
+    <div class="content">
+        <div class="card demo-card-header-pic">
+            <div class="card-header" id="card-header" style="display:inline-flex;"></div>
+            <div valign="bottom" class="card-header color-white no-border no-padding" id="bottom-father">
+                <a href="javascript:;" id="bottom"></a>
+            </div>
+            <div class="card-content" id="titles">
+                <div class="card-content-inner" style="padding: 0px">
+                    <p></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-content">
+                <div class="card-content-inner" id="location">
+                    <p></p>
+                </div>
+
+            </div>
+
+
+            <div class="card-footer">
+                <a href="#" class="link" id="ltimes" style="color: darkgrey"> </a>
+                <a href="#" class="link" id="lcomment"> </a>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+        var count = 0;
+        $("#lcomment").bind('click', function () {
+        count++;
+        if (count % 2 == 0) {
+        $("#comment_div").slideUp("slow");
+        $(".weui-textarea").val("");
+
+        } else {
+        $("#comment_div").slideDown("slow");
+        $(".weui-textarea").val("").focus();
+        }
+        })
+        </script>
+        <div class="card" id="comment_div" style="display: none">
+            <div class="card-header">留言:</div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                    <div class="weui-textarea-counter"><a href="javascript:;" id="add_comment"> 添加留言</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $("#add_comment").bind('click', function () {
+                var id = $.cookie("share_id");
+                confirmComment(id);
+            });
+            //    添加评论
+            function confirmComment(id) {
+                var comment_content = $(".weui-textarea").val();
+                if (comment_content == null || comment_content == "") {
+                    $.toast("请留言", "text");
+                } else {
+                    var os = $.device.os;
+                    var commentCount = $("#lcommentCount").html();
+
+                    $.ajax({
+                        url: "index/addComment",
+                        type: "POST",
+                        dataType: "json",
+                        data: {"id": commentCount, "lid": id, "lcommentInfo": comment_content, "des_info": "ok"},
+                        success: function (data) {
+                            $.toast(data.flag);
+                            if (data.flag == "留言成功") {
+                                dealCommentSuccess(data, commentCount);
+                            }
+                        }
+                    });
+                }
+            }
+            //拿到评论的值和ID  后台添加评论处理  前段添加元素等处理
+            function dealCommentSuccess(data, commentCount) {
+                var colength = $.cookie("colength");
+                colength = parseInt(colength) + 1;
+                $.cookie("colength", colength);
+                var commentInfo = data.commentInfo;
+                commentCount = parseInt(commentCount) + 1;
+                $("#lcommentCount").html(commentCount);
+                var co_html = '<div class="card">' +
+                    '<div class="card-footer">' +
+                    '<span>' + colength + '#</span>' +
+                    '<span>' + commentInfo.lctime + '</span>' +
+                    '</div>' +
+                    '<div class="card-content">' +
+                    '<div class="card-content-inner">' +
+                    '<span class="icon icon-message"></span>&nbsp;&nbsp;' +
+                    '' + commentInfo.lcommentInfo + '' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                $("#comment_div").after(co_html);
+                $("#lcomment").click();
+            }
+
+        </script>
+
+        <!--<div class="card demo-card-header-pic">-->
+        <!--<div class="card-header">卡头</div>-->
+
+        <!--<div class="card-content">-->
+        <!--<div class="card-content-inner">-->
+
+        <!--<p>此处是内容...</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="card-footer">-->
+        <!--<a href="#" class="link" style="color: darkgrey">2015/01/15</a>-->
+        <!--<a href="#" class="link">评论</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <br>
+        <div class="weui-footer">
+            <p class="weui-footer__text">©明德微校园</p>
+        </div>
+
+    </div>
+
+    <!--<span class="tab-label">文案</span>-->
+
+    <nav class="bar bar-tab">
+
+        <a class="tab-item external" href="javascript:;" id="confirmBack">
+            <img src="../img/manage/repeat_show.png" style="width: 30px;height: 30px">
+            <span class="tab-label">未认领</span>
+        </a>
+        <a class="tab-item external" href="javascript:;" id="confirm">
+            <img src="../img/manage/confirm.png" style="width: 30px;height: 30px">
+            <span class="tab-label">已认领</span>
+        </a>
+    </nav>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#confirm").bind('click', function () {
+
+
+                $.confirm("确认此物品物归原主了?", function () {
+                    //点击确认后的回调函数
+                    goodsConfirm("confirm_yes");
+                }, function () {
+                    //点击取消后的回调函数
+                });
+
+
+            });
+            $("#confirmBack").bind('click', function () {
+
+
+                $.confirm("还原状态到未认领?", function () {
+                    //点击确认后的回调函数
+                    goodsConfirm("confirm_no");
+                }, function () {
+                    //点击取消后的回调函数
+                });
+
+
+            });
+        });
+
+        function goodsConfirm(flag) {
+            var id = document.URL.split("=")[1];
+            $.ajax({
+                url: "../manage/goodsConfirm",
+                type: "POST",
+                dataType: "json",
+                data: {"flag": flag,"id":id},
+                success: function (data) {
+                    if (data == "ok") {
+                        $.toast("此物品已下架");
+                    }
+                }
+            });
+        }
+    </script>
+</div>
+
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+</body>
+</html>

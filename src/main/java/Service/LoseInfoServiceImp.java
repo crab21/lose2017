@@ -18,7 +18,7 @@ import java.util.Map;
  * Created by k on 17-7-6.
  */
 @Service
-
+@Transactional
 public class LoseInfoServiceImp implements LoseInfoService {
 
     @Autowired
@@ -54,8 +54,12 @@ public class LoseInfoServiceImp implements LoseInfoService {
         return loseInfoDao.selectSearchInfo(searchEntity);
     }
 
-    @Transactional
+
     public void deleteOne(int id) {
         loseInfoDao.changeDeleteOne(id);
+    }
+
+    public void deleteOneComment(int id) {
+        loseInfoDao.deleteOneCommentById(id);
     }
 }
