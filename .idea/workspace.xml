@@ -5,73 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/css" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5b4c828-290e-4bb2-ad75-ebd43b6e4ddc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_api_org_netbeans_api_annotations_common_RELEASE731.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_api_org_netbeans_api_progress_RELEASE731.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_api_org_openide_awt_RELEASE731.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_api_org_openide_filesystems_RELEASE731.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_api_org_openide_util_RELEASE731.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_api_org_openide_util_lookup_RELEASE731.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/LoseInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/SaveFileThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/WeixinUnit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/addLoseInfoThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/LoseInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/SaveFileThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/WeixinUnit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/addLoseInfoThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/org-netbeans-api-annotations-common-RELEASE731.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/org-netbeans-api-progress-RELEASE731.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/org-openide-awt-RELEASE731.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/org-openide-filesystems-RELEASE731.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/org-openide-util-RELEASE731.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/org-openide-util-lookup-RELEASE731.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/root@119.28.86.177" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Controller/LoseInfo.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Controller/SaveFileThread.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Controller/WeixinUnit.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/biz/WeixinUnit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Controller/addLoseInfoThread.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/biz/addLoseInfoThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/scampus.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/scampus.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/WeiRequest.class" afterPath="$PROJECT_DIR$/target/classes/Controller/biz/WeiRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDaoImp.class" afterPath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Service/LoseInfoService.class" afterPath="$PROJECT_DIR$/target/classes/Service/LoseInfoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Service/LoseInfoServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/Service/LoseInfoServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose.war" afterPath="$PROJECT_DIR$/target/lose.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/WeiRequest.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/WeiRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDao.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDaoImp.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoService.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoServiceImp.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/shenhezhong.png" afterPath="$PROJECT_DIR$/target/lose/img/shenhezhong.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/认领确认.png" afterPath="$PROJECT_DIR$/target/lose/img/认领确认.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/lose_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/lose_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lose.iml" afterPath="$PROJECT_DIR$/lose.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/biz/WeiRequest.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/biz/WeiRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDaoImp.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/LoseInfoDaoImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/Service/LoseInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Service/LoseInfoServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/Service/LoseInfoServiceImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LoseInfo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page/search.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page/sub.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LoseInfo.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LoseInfo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/LoseInfo.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/LoseInfo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/index.html" afterPath="$PROJECT_DIR$/target/lose/page/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/lose_one.html" afterPath="$PROJECT_DIR$/target/lose/page/lose_one.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/search.html" afterPath="$PROJECT_DIR$/target/lose/page/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/sub.html" afterPath="$PROJECT_DIR$/target/lose/page/sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="a5b4c828-290e-4bb2-ad75-ebd43b6e4ddc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1545,12 +1479,12 @@
       <workItem from="1501282840130" duration="14233000" />
       <workItem from="1501918068731" duration="19940000" />
       <workItem from="1501978683235" duration="4607000" />
-      <workItem from="1501983332405" duration="22155000" />
+      <workItem from="1501983332405" duration="22306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346536000" />
+    <option name="totallyTimeSpent" value="346687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1584,9 +1518,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6348228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6348228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287879" sideWeight="0.55469954" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287879" sideWeight="0.55469954" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266564" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23560606" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
