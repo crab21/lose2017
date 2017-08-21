@@ -6,4 +6,13 @@
     <update id="goodsConfirm" parameterType="java.util.Map">
         update lose_info set lflag=#{flag} where id=#{id}
     </update>
+
+    <!--每天定时更新appscret-->
+    <update id="updateWeiXinAppScret" parameterType="java.lang.String">
+        update weixin set appscret=#{appScret} where id=1
+    </update>
+    <!--通过id拿到appscret-->
+    <select id="selectWeiXinAppScret" parameterType="java.lang.String" resultType="java.lang.String">
+        select appscret from weixin where id=1
+    </select>
 </mapper>

@@ -149,6 +149,7 @@
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 showvalf();
                 weixinshare();
+                alert("ok");
             } else {
                 location.href = "wrong.html";
 //                showvalf();
@@ -165,8 +166,9 @@
                 data: {"urls": locate_url},
                 type: "POST",
                 success: function (data) {
+                    alert("start");
                     wx.config({
-                        debug: false,
+                        debug: true,
                         appId: 'wxb959ca08d98bc454',
                         timestamp: data.timestamp,
                         nonceStr: data.noncestr,
@@ -196,6 +198,8 @@
                             type: 'link', // 分享类型,music、video或link，不填默认为link
                         });
                     });
+                }, error: function () {
+                    alert("error");
                 }
             });
         }
@@ -333,182 +337,21 @@
 
         </script>
 
-        <!--<div class="card demo-card-header-pic">-->
-        <!--<div class="card-header">卡头</div>-->
-
-        <!--<div class="card-content">-->
-        <!--<div class="card-content-inner">-->
-
-        <!--<p>此处是内容...</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="card-footer">-->
-        <!--<a href="#" class="link" style="color: darkgrey">2015/01/15</a>-->
-        <!--<a href="#" class="link">评论</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <br>
-        <div class="weui-footer">
-            <p class="weui-footer__text">©明德微校园</p>
-        </div>
-
-        <div class="panel-overlay"></div>
-        <!-- Left Panel with Reveal effect -->
-        <div class="panel panel-left panel-cover" id='panel-left-demo'>
-            <div class="content-block">
-
-                <p><a href="#" class="close-panel">关闭</a></p>
-            </div>
-            <div class="list-block">
-                <div class="card" style="color: black;background-color: dimgrey">
-                    <div class="card-content">
-                        <div class="list-block">
-                            <ul>
-                                <li>
-                                    <a href="search.html" class="item-link item-content" id="searchInfo">
-                                        <div class="item-media"><i class="icon icon-f7"></i></div>
-                                        <div class="item-inner">
-                                            <div class="item-title">搜索</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" style="color: black;background-color: dimgrey">
-                    <div class="card-content">
-                        <div class="list-block">
-                            <ul>
-                                <li>
-                                    <a href="sub.html" class="item-link item-content">
-                                        <div class="item-media"><i class="icon icon-f7"></i></div>
-                                        <div class="item-inner">
-                                            <div class="item-title">发布</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="color: black;background-color: dimgrey">
-                    <div class="card-content">
-                        <div class="list-block">
-                            <ul>
-                                <li>
-                                    <a href="index.html" class="item-link item-content">
-                                        <div class="item-media"><i class="icon icon-f7"></i></div>
-                                        <div class="item-inner">
-                                            <div class="item-title">主页</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" style="color: black;background-color: dimgrey">
-                    <div class="card-content">
-                        <div class="list-block">
-                            <ul>
-                                <li>
-                                    <a href="javascript:;" class="item-link item-content" id="aboutUs">
-                                        <div class="item-media"><i class="icon icon-f7"></i></div>
-                                        <div class="item-inner">
-                                            <div class="item-title">关于我们</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" style="color: black;background-color: dimgrey;text-align: center;height: 56.31px"
-                     id="dark">
-                    <div class="card-content" style="padding-top: 3%">
-                        <div style="display: inline;font-size: 20px">夜间模式</div>
-                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                        <div style="display: inline">
-                            <label class="label-switch">
-                                <input type="checkbox" id="choose_dark">
-                                <div class="checkbox"></div>
-                            </label>
-                        </div>
-
-                    </div>
-                </div>
-
-                <script type="text/javascript">
-                    $("#choose_dark").click(function () {
-                        var s = $("#choose_dark");
-                        var ss = s.attr('checked');
-                        if (ss == 'checked') {
-                            s.attr('checked', false);
-                            $("body").removeClass('theme-dark');
-                        } else {
-                            s.attr('checked', true);
-                            $("body").addClass('theme-dark');
-                            $("#dark").attr('background-color', 'black');
-                        }
-                    })
-                </script>
-
-            </div>
-            <div class="panel panel-right panel-reveal">
-                <div class="content-block">
-                    <p>这是一个侧栏</p>
-                    <!-- Click on link with "close-panel" class will close panel -->
-                    <p><a href="#" class="close-panel">关闭</a></p>
-                </div>
-            </div>
+        <!--<span class="tab-label">文案</span>-->
 
 
-            <div id="full" class='weui-popup__container'>
-                <div class="weui-popup__overlay"></div>
-                <div class="weui-popup__modal">
-
-                    <div class="card">
-                        <div class=""> &nbsp;<span class="icon icon-home"></span>&nbsp;关于我们</div>
-                        <hr>
-                        <div class="card-content" style="text-align: center">
-                            <div class="card-content-inner">我也不知道说什么好</div>
-                            <img src="https://mmbiz.qlogo.cn/mmbiz/n97zUUAl02tRVNdLZT9xWXibIxDkKvTuicBiaDejtd4xRAplKqrb0z83L7KJ4BtW2QEo8qDZ6XEPmN1V11cZ4zsicw/0?wx_fmt=jpeg"
-                                 width="70%" height="
-70%">
-                            <div class="card-content-inner">若有技术问题，请加微信</div>
-                            <img src="../img/me.jpg" width="60%" height="70%">
-                        </div>
-                    </div>
-
-                    <div class="weui-footer">
-                        <p class="weui-footer__text">©明德微校园</p>
-                    </div>
-                    <a href="javascript:;" class="weui-btn weui-btn_primary close-popup">关闭</a>
-                </div>
-
-            </div>
-            <script>
-                $("#aboutUs").bind('click', function () {
-                    $("#full").popup();
-
-                })
-            </script>
-        </div>
     </div>
-
-    <!--<span class="tab-label">文案</span>-->
-
     <nav class="bar bar-tab">
-        <a class="tab-item external active open-panel" href="#" data-panel='#panel-left-demo'>
-            <img src="../img/setting.png" style="width: 30px;height: 40px">
+        <a class="tab-item external active open-panel" href="index.html" data-panel='#panel-left-demo'>
+            <img src="../img/主页.png" style="width: 30px;height: 30px">
             <!--<span class="tab-label">文案</span>-->
         </a>
-        <a class="tab-item external" href="javascript:window.history.back();" id="loadmore">
-            <img src="../img/返回.png" style="width: 30px;height: 40px">
+        <a class="tab-item external active open-panel" href="search.html" data-panel='#panel-left-demo'>
+            <img src="../img/search.png" style="width: 30px;height: 30px">
+            <!--<span class="tab-label">文案</span>-->
+        </a>
+        <a class="tab-item external active open-panel" href="sub.html" data-panel='#panel-left-demo'>
+            <img src="../img/publish.png" style="width: 30px;height: 30px">
             <!--<span class="tab-label">文案</span>-->
         </a>
         <a class="tab-item external" href="javascript:;" id="deleteOne">
@@ -523,19 +366,19 @@
             $("#deleteOne").bind('click', function () {
 
 
-                $.confirm("确定申请删除此条消息吗?", function () {
+                $.confirm("确认此物品已经认领?", function () {
                     //点击确认后的回调函数
                     confirmDelete();
                 }, function () {
                     //点击取消后的回调函数
                 });
-
-
             });
         });
 
         function confirmDelete() {
-            var id = document.URL.split("=")[1];
+            var id = document.URL;
+            id = id.substring(id.indexOf("=")+1, id.indexOf("&"));
+
             $.ajax({
                 url: "index/deleteOne",
                 type: "POST",
@@ -543,7 +386,7 @@
                 data: {id: id},
                 success: function (data) {
                     if (data == "ok") {
-                        $.toast("已发送删除申请");
+                        $.toast("已向管理员发送认领申请");
                         var hhtml = "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
                         $("#titles").append(hhtml);
                         $("#deleteOne").remove();
