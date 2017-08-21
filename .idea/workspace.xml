@@ -82,180 +82,7 @@
 >>>>>>> wpy
 =======
     <list default="true" id="a5b4c828-290e-4bb2-ad75-ebd43b6e4ddc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/LoseInfoController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/ManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/ImgCompress.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/SaveFileThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/WeixinUnit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/addLoseInfoThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/scheTime/WeiXinAppScret.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDaoImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ManageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ManageDaoImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/CommentInfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/LoseInfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/SearchEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/Componment/CustomMultipartResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/Componment/FileUploadProgressListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/Componment/ProgressEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/LoseInfoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/LoseInfoServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/ManageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/ManageServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/WeiRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wpy/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wpy/Tst.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/publish.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/publish.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/search.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose.war" afterPath="$PROJECT_DIR$/target/lose.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/LoseInfoController.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/LoseInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/ManageController.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/ManageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/ImgCompress.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/ImgCompress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/SaveFileThread.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/SaveFileThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/WeixinUnit.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/WeixinUnit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/addLoseInfoThread.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/addLoseInfoThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/scheTime/WeiXinAppScret.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/scheTime/WeiXinAppScret.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDao.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDaoImp.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/ManageDao.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/ManageDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/ManageDaoImp.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/ManageDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/CommentInfoEntity.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/CommentInfoEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/LoseInfoEntity.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/LoseInfoEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/Page.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/Page.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/SearchEntity.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/SearchEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/CustomMultipartResolver.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/CustomMultipartResolver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/FileUploadProgressListener.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/FileUploadProgressListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/ProgressEntity.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/ProgressEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoService.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoServiceImp.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/ManageService.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/ManageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/ManageServiceImp.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/ManageServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/WeiRequest.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/WeiRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/wpy/Test.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/wpy/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/wpy/Tst.class" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/wpy/Tst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/activation-1.1.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/activation-1.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ant-1.9.6.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ant-1.9.6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ant-launcher-1.9.6.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ant-launcher-1.9.6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/asm-5.2.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/asm-5.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/cglib-3.2.5.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/cglib-3.2.5.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-collections-3.2.2.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-collections-3.2.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-dbcp-1.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-fileupload-1.3.3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-io-2.2.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-io-2.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-logging-1.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-pool-1.6.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-pool-1.6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/freemarker-2.3.23.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/gson-2.8.1.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/gson-2.8.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/javassist-3.21.0-GA.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/javassist-3.21.0-GA.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/jstl-1.2.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/jstl-1.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-1.2.16.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-1.2.16.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-api-2.3.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-api-2.3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-core-2.3.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-core-2.3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mail-1.4.7.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mail-1.4.7.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mybatis-3.4.4.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mybatis-3.4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mybatis-spring-1.3.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mysql-connector-java-5.1.42.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mysql-connector-java-5.1.42.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ognl-3.1.14.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ognl-3.1.14.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/rt.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/rt.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/slf4j-api-1.7.25.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-context-support-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-context-support-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-instrument-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-instrument-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-jms-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-jms-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-messaging-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-messaging-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-orm-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-orm-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-oxm-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-oxm-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/123.jpg" afterPath="$PROJECT_DIR$/target/lose/img/123.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/aboutUs.png" afterPath="$PROJECT_DIR$/target/lose/img/aboutUs.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/bodyBg2.jpg" afterPath="$PROJECT_DIR$/target/lose/img/bodyBg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/bodyBg3.jpg" afterPath="$PROJECT_DIR$/target/lose/img/bodyBg3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/form/info.png" afterPath="$PROJECT_DIR$/target/lose/img/form/info.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/form/location.png" afterPath="$PROJECT_DIR$/target/lose/img/form/location.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/form/phone.png" afterPath="$PROJECT_DIR$/target/lose/img/form/phone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/form/title.png" afterPath="$PROJECT_DIR$/target/lose/img/form/title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/form/type.png" afterPath="$PROJECT_DIR$/target/lose/img/form/type.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/blank.gif" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/blank.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_loading.gif" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_loading@2x.gif" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_loading@2x.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_overlay.png" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_overlay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_sprite.png" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_sprite@2x.png" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_sprite@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/loadmore.png" afterPath="$PROJECT_DIR$/target/lose/img/loadmore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/loseOneTitle.png" afterPath="$PROJECT_DIR$/target/lose/img/loseOneTitle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/loseTitle.png" afterPath="$PROJECT_DIR$/target/lose/img/loseTitle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/manage/confirm.png" afterPath="$PROJECT_DIR$/target/lose/img/manage/confirm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/manage/manage_tai.png" afterPath="$PROJECT_DIR$/target/lose/img/manage/manage_tai.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/manage/pwd.png" afterPath="$PROJECT_DIR$/target/lose/img/manage/pwd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/manage/repeat_show.png" afterPath="$PROJECT_DIR$/target/lose/img/manage/repeat_show.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/manage/user.png" afterPath="$PROJECT_DIR$/target/lose/img/manage/user.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/me.jpg" afterPath="$PROJECT_DIR$/target/lose/img/me.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/pinglun.png" afterPath="$PROJECT_DIR$/target/lose/img/pinglun.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/publish.png" afterPath="$PROJECT_DIR$/target/lose/img/publish.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/scampus.jpg" afterPath="$PROJECT_DIR$/target/lose/img/scampus.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/search.png" afterPath="$PROJECT_DIR$/target/lose/img/search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/setting.png" afterPath="$PROJECT_DIR$/target/lose/img/setting.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/shenhezhong.png" afterPath="$PROJECT_DIR$/target/lose/img/shenhezhong.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/主页.png" afterPath="$PROJECT_DIR$/target/lose/img/主页.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/失物上交.png" afterPath="$PROJECT_DIR$/target/lose/img/失物上交.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/失物申报.png" afterPath="$PROJECT_DIR$/target/lose/img/失物申报.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/留言.png" afterPath="$PROJECT_DIR$/target/lose/img/留言.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/认领确认.png" afterPath="$PROJECT_DIR$/target/lose/img/认领确认.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/返回.png" afterPath="$PROJECT_DIR$/target/lose/img/返回.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/uploadFile/123.jpg" afterPath="$PROJECT_DIR$/target/lose/uploadFile/123.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/scheTime/WeiXinAppScret.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/scheTime/WeiXinAppScret.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page/manage_index.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/manage_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LoseInfo.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LoseInfo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/Manage.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/Manage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/LoseInfo.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/LoseInfo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/Manage.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/Manage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mybatis.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mybatis.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/lose/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/css/demos.css" afterPath="$PROJECT_DIR$/target/lose/css/demos.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/css/htmleaf-demo.css" afterPath="$PROJECT_DIR$/target/lose/css/htmleaf-demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/css/jquery.lineProgressbar.css" afterPath="$PROJECT_DIR$/target/lose/css/jquery.lineProgressbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/css/jquery.lineProgressbar.min.css" afterPath="$PROJECT_DIR$/target/lose/css/jquery.lineProgressbar.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/css/normalize.css" afterPath="$PROJECT_DIR$/target/lose/css/normalize.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/css/picfull/jquery.fancybox.css" afterPath="$PROJECT_DIR$/target/lose/css/picfull/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/jquery.fancybox.css" afterPath="$PROJECT_DIR$/target/lose/img/fullpic/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/inde.jsp" afterPath="$PROJECT_DIR$/target/lose/inde.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/js/fastclick.js" afterPath="$PROJECT_DIR$/target/lose/js/fastclick.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/js/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/target/lose/js/jquery-2.1.4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/js/jquery.lineProgressbar.js" afterPath="$PROJECT_DIR$/target/lose/js/jquery.lineProgressbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/js/picfull/jquery.fancybox.js" afterPath="$PROJECT_DIR$/target/lose/js/picfull/jquery.fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/js/picfull/jquery.fancybox.pack.js" afterPath="$PROJECT_DIR$/target/lose/js/picfull/jquery.fancybox.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/js/picfull/jquery.mousewheel-3.0.6.pack.js" afterPath="$PROJECT_DIR$/target/lose/js/picfull/jquery.mousewheel-3.0.6.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/jump/manage_jump.html" afterPath="$PROJECT_DIR$/target/lose/jump/manage_jump.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/index.html" afterPath="$PROJECT_DIR$/target/lose/page/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/lose_one.html" afterPath="$PROJECT_DIR$/target/lose/page/lose_one.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/manage.html" afterPath="$PROJECT_DIR$/target/lose/page/manage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/manage_index.html" afterPath="$PROJECT_DIR$/target/lose/page/manage_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/manage_one.html" afterPath="$PROJECT_DIR$/target/lose/page/manage_one.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/search.html" afterPath="$PROJECT_DIR$/target/lose/page/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/sub.html" afterPath="$PROJECT_DIR$/target/lose/page/sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lose/page/wrong.html" afterPath="$PROJECT_DIR$/target/lose/page/wrong.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
 >>>>>>> wpy
     <ignored path="$PROJECT_DIR$/out/" />
@@ -351,7 +178,38 @@
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
 >>>>>>> wpy
               <folding>
-                <element signature="n#style#0;n#img#0;n#a#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1503326724599" expanded="true" signature="1754:2388" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="1848:2376" ph="{&quot;url&quot;: &quot;index/loseAllInfo&quot;...}" />
+                <marker date="1503326724599" expanded="true" signature="2035:2362" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="2079:2260" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="2162:2236" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="2421:4458" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="2566:4446" ph="{&quot;url&quot;: &quot;index/weixinshare&quot;...}" />
+                <marker date="1503326724599" expanded="true" signature="2753:4394" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="2820:3225" ph="{&quot;appId&quot;: 'wxb959ca08d98bc454'...}" />
+                <marker date="1503326724599" expanded="true" signature="3269:4374" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="3372:3550" ph="{&quot;title&quot;: '明德学院失物招领信息中心'...}" />
+                <marker date="1503326724599" expanded="true" signature="3655:3981" ph="{&quot;title&quot;: '明德学院失物招领信息中心'...}" />
+                <marker date="1503326724599" expanded="true" signature="4025:4350" ph="{&quot;title&quot;: '明德学院失物招领信息中心'...}" />
+                <marker date="1503326724599" expanded="true" signature="4413:4432" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="4590:4714" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="4720:4848" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="4978:7114" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="5184:5355" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="5361:5533" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="6265:6410" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="7173:7238" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="7266:7564" ph="{...}" />
+                <marker date="1503326724599" expanded="true" signature="7331:7536" ph="//..." />
+                <marker date="1503326724599" expanded="true" signature="7697:7818" ph="..." />
+                <marker date="1503326724599" expanded="true" signature="7784:7790" ph="&amp;nbsp;" />
+                <marker date="1503326724599" expanded="true" signature="7844:8106" ph="..." />
+                <marker date="1503326724599" expanded="true" signature="8241:8378" ph="..." />
+                <marker date="1503326724599" expanded="false" signature="8287:8311" ph="..." />
+                <marker date="1503326724599" expanded="false" signature="8533:8557" ph="..." />
+                <marker date="1503326724599" expanded="true" signature="8777:8801" ph="..." />
+                <marker date="1503326724599" expanded="false" signature="8994:9018" ph="..." />
+                <marker date="1503326724599" expanded="true" signature="9185:9214" ph="{...}" />
               </folding>
 >>>>>>> wpy
             </state>
@@ -458,6 +316,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="714">
               <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
 =======
@@ -476,17 +335,21 @@
             <state relative-caret-position="239">
               <caret line="134" column="23" lean-forward="false" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
 >>>>>>> wpy
+=======
+            <state relative-caret-position="274">
+              <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+>>>>>>> wpy
               <folding>
-                <marker date="1503325175863" expanded="true" signature="3078:3091" ph="..." />
-                <marker date="1503325175863" expanded="true" signature="3125:3145" ph="..." />
-                <marker date="1503325175863" expanded="true" signature="3256:3284" ph="..." />
-                <marker date="1503325175863" expanded="true" signature="3326:3332" ph="&amp;nbsp;" />
-                <marker date="1503325175863" expanded="true" signature="3332:3338" ph="&amp;nbsp;" />
-                <marker date="1503325175863" expanded="true" signature="3433:3461" ph="..." />
-                <marker date="1503325175863" expanded="true" signature="3504:3510" ph="&amp;nbsp;" />
-                <marker date="1503325175863" expanded="true" signature="3510:3516" ph="&amp;nbsp;" />
-                <marker date="1503325175863" expanded="true" signature="3944:3958" ph="..." />
-                <marker date="1503325175863" expanded="true" signature="4129:4141" ph="..." />
+                <marker date="1503326754528" expanded="true" signature="3078:3091" ph="..." />
+                <marker date="1503326754528" expanded="true" signature="3125:3145" ph="..." />
+                <marker date="1503326754528" expanded="true" signature="3256:3284" ph="..." />
+                <marker date="1503326754528" expanded="true" signature="3326:3332" ph="&amp;nbsp;" />
+                <marker date="1503326754528" expanded="true" signature="3332:3338" ph="&amp;nbsp;" />
+                <marker date="1503326754528" expanded="true" signature="3433:3461" ph="..." />
+                <marker date="1503326754528" expanded="true" signature="3504:3510" ph="&amp;nbsp;" />
+                <marker date="1503326754528" expanded="true" signature="3510:3516" ph="&amp;nbsp;" />
+                <marker date="1503326754528" expanded="true" signature="3944:3958" ph="..." />
+                <marker date="1503326754528" expanded="true" signature="4129:4141" ph="..." />
               </folding>
 >>>>>>> wpy
             </state>
@@ -857,6 +720,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> wpy
       <pane id="Scope">
@@ -910,6 +774,8 @@
 >>>>>>> wpy
 =======
       <pane id="Scratches" />
+>>>>>>> wpy
+=======
 >>>>>>> wpy
       <pane id="ProjectPane">
         <subPane>
@@ -1267,10 +1133,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scratches" />
 =======
       <pane id="PackagesPane" />
 =======
+>>>>>>> wpy
+=======
+      <pane id="PackagesPane" />
 >>>>>>> wpy
       <pane id="Scratches" />
       <pane id="Scope">
@@ -1292,6 +1162,9 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> wpy
+=======
 >>>>>>> wpy
 =======
 >>>>>>> wpy
@@ -1983,11 +1856,16 @@
 >>>>>>> wpy
 =======
       <workItem from="1503324983050" duration="940000" />
+<<<<<<< HEAD
+>>>>>>> wpy
+=======
+      <workItem from="1503326730425" duration="28000" />
 >>>>>>> wpy
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2004,6 +1882,9 @@
 >>>>>>> wpy
 =======
     <option name="totallyTimeSpent" value="370432000" />
+>>>>>>> wpy
+=======
+    <option name="totallyTimeSpent" value="370460000" />
 >>>>>>> wpy
   </component>
   <component name="TodoView">
@@ -2084,6 +1965,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6355811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2104,9 +1986,13 @@
 =======
 >>>>>>> wpy
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6321839" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> wpy
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6321839" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266564" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23560606" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
@@ -2118,6 +2004,9 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25075758" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25454545" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> wpy
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25833333" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> wpy
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22803031" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
 >>>>>>> wpy
@@ -2618,7 +2507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2717,7 +2605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2725,7 +2612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2733,7 +2619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2772,8 +2657,11 @@
 =======
         <state relative-caret-position="17">
           <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+<<<<<<< HEAD
 >>>>>>> wpy
           <folding />
+>>>>>>> wpy
+=======
 >>>>>>> wpy
         </state>
       </provider>
@@ -2796,8 +2684,11 @@
 =======
         <state relative-caret-position="119">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+<<<<<<< HEAD
 >>>>>>> wpy
           <folding />
+=======
+>>>>>>> wpy
         </state>
       </provider>
     </entry>
@@ -2820,7 +2711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2835,7 +2725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2853,8 +2742,11 @@
 =======
         <state relative-caret-position="153">
           <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="14" />
+<<<<<<< HEAD
 >>>>>>> wpy
           <folding />
+=======
+>>>>>>> wpy
         </state>
       </provider>
     </entry>
@@ -2862,7 +2754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3011,7 +2902,38 @@
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
 >>>>>>> wpy
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1503326724599" expanded="true" signature="1754:2388" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="1848:2376" ph="{&quot;url&quot;: &quot;index/loseAllInfo&quot;...}" />
+            <marker date="1503326724599" expanded="true" signature="2035:2362" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="2079:2260" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="2162:2236" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="2421:4458" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="2566:4446" ph="{&quot;url&quot;: &quot;index/weixinshare&quot;...}" />
+            <marker date="1503326724599" expanded="true" signature="2753:4394" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="2820:3225" ph="{&quot;appId&quot;: 'wxb959ca08d98bc454'...}" />
+            <marker date="1503326724599" expanded="true" signature="3269:4374" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="3372:3550" ph="{&quot;title&quot;: '明德学院失物招领信息中心'...}" />
+            <marker date="1503326724599" expanded="true" signature="3655:3981" ph="{&quot;title&quot;: '明德学院失物招领信息中心'...}" />
+            <marker date="1503326724599" expanded="true" signature="4025:4350" ph="{&quot;title&quot;: '明德学院失物招领信息中心'...}" />
+            <marker date="1503326724599" expanded="true" signature="4413:4432" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="4590:4714" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="4720:4848" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="4978:7114" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="5184:5355" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="5361:5533" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="6265:6410" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="7173:7238" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="7266:7564" ph="{...}" />
+            <marker date="1503326724599" expanded="true" signature="7331:7536" ph="//..." />
+            <marker date="1503326724599" expanded="true" signature="7697:7818" ph="..." />
+            <marker date="1503326724599" expanded="true" signature="7784:7790" ph="&amp;nbsp;" />
+            <marker date="1503326724599" expanded="true" signature="7844:8106" ph="..." />
+            <marker date="1503326724599" expanded="true" signature="8241:8378" ph="..." />
+            <marker date="1503326724599" expanded="false" signature="8287:8311" ph="..." />
+            <marker date="1503326724599" expanded="false" signature="8533:8557" ph="..." />
+            <marker date="1503326724599" expanded="true" signature="8777:8801" ph="..." />
+            <marker date="1503326724599" expanded="false" signature="8994:9018" ph="..." />
+            <marker date="1503326724599" expanded="true" signature="9185:9214" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -3085,19 +3007,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage_index.html">
 >>>>>>> wpy
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="134" column="23" lean-forward="false" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
+        <state relative-caret-position="274">
+          <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
           <folding>
-            <marker date="1503325175863" expanded="true" signature="3078:3091" ph="..." />
-            <marker date="1503325175863" expanded="true" signature="3125:3145" ph="..." />
-            <marker date="1503325175863" expanded="true" signature="3256:3284" ph="..." />
-            <marker date="1503325175863" expanded="true" signature="3326:3332" ph="&amp;nbsp;" />
-            <marker date="1503325175863" expanded="true" signature="3332:3338" ph="&amp;nbsp;" />
-            <marker date="1503325175863" expanded="true" signature="3433:3461" ph="..." />
-            <marker date="1503325175863" expanded="true" signature="3504:3510" ph="&amp;nbsp;" />
-            <marker date="1503325175863" expanded="true" signature="3510:3516" ph="&amp;nbsp;" />
-            <marker date="1503325175863" expanded="true" signature="3944:3958" ph="..." />
-            <marker date="1503325175863" expanded="true" signature="4129:4141" ph="..." />
+            <marker date="1503326754528" expanded="true" signature="3078:3091" ph="..." />
+            <marker date="1503326754528" expanded="true" signature="3125:3145" ph="..." />
+            <marker date="1503326754528" expanded="true" signature="3256:3284" ph="..." />
+            <marker date="1503326754528" expanded="true" signature="3326:3332" ph="&amp;nbsp;" />
+            <marker date="1503326754528" expanded="true" signature="3332:3338" ph="&amp;nbsp;" />
+            <marker date="1503326754528" expanded="true" signature="3433:3461" ph="..." />
+            <marker date="1503326754528" expanded="true" signature="3504:3510" ph="&amp;nbsp;" />
+            <marker date="1503326754528" expanded="true" signature="3510:3516" ph="&amp;nbsp;" />
+            <marker date="1503326754528" expanded="true" signature="3944:3958" ph="..." />
+            <marker date="1503326754528" expanded="true" signature="4129:4141" ph="..." />
           </folding>
 >>>>>>> wpy
         </state>
