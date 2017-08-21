@@ -7,4 +7,6 @@ import java.util.Map;
  */
 public interface ManageDao {
     void goodsConfirm(Map flag);
+    void changeWeiXinAppScret(String appScret);
+    String getWeiXinAppScret();
 }

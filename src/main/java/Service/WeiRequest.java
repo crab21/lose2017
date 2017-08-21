@@ -1,4 +1,8 @@
-package Controller.biz;
+package Service;
+
+import Dao.ManageDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -13,20 +17,24 @@ import java.util.UUID;
 /**
  * Created by k on 8/5/17.
  */
+@Service
 public class WeiRequest {
 
+    @Autowired
+    ManageDao manageDao;
 
     //获取access——token
     public String access_token() {
         String urls = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&";
         String appId = "wxb959ca08d98bc454";
-        String secret = "5cf0ecfa0ea30bbc7c792dc189a54f38";
+        String secret = "b36ede8b31c5a8b0875961515bf9545a";
         String params = "appId=" + appId + "&secret=" + secret;
         Map map = new HashMap();
         map.put("urls", urls);
         map.put("params", params);
 
         String result = getCustomerInfo(map);
+        System.out.println(result);
         String[] name = result.split("\"");
 
         return name[3];
@@ -34,7 +42,9 @@ public class WeiRequest {
 
 
     public String jsapi_ticket() {
-        String access_token = access_token();
+//        从数据库获取access_token
+        String access_token = getWeiXinAppScret();
+        System.out.println(access_token + "+++++++++++++++++");
         String urls = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?";
         String params = "access_token=" + access_token + "&type=jsapi";
         Map map = new HashMap();
@@ -117,6 +127,18 @@ public class WeiRequest {
         return map;
     }
 
+
+    public String getWeiXinAppScret() {
+        String weiXinAppScret = manageDao.getWeiXinAppScret();
+        System.out.println(weiXinAppScret + "<<<<<<<<<<<<<<<<");
+        return weiXinAppScret;
+
+    }
+
+    public static void main(String[] args) {
+        String name = new WeiRequest().access_token();
+        System.out.println(name);
+    }
 
 }
 

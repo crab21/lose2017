@@ -1,7 +1,7 @@
 package Controller;
 
 import Controller.biz.SaveFileThread;
-import Controller.biz.WeiRequest;
+import Service.WeiRequest;
 import Controller.biz.addLoseInfoThread;
 import Entity.CommentInfoEntity;
 import Entity.LoseInfoEntity;
@@ -42,10 +42,13 @@ public class LoseInfoController {
     private LoseInfoService loseInfoService;
 
 
+    @Autowired
+    WeiRequest weiRequest;
+
     //微信朋友圈分享
     @RequestMapping("weixinshare")
     public String weixinshare(@RequestParam("urls")String urls, HttpServletResponse response, HttpServletRequest request) {
-        Map map = new WeiRequest().getAllInfo();
+        Map map = weiRequest.getAllInfo();
         map.put("url", urls);
 //        拿到签名
         String signature = sha1Signature(map);

@@ -16,9 +16,16 @@ public class ManageDaoImp implements ManageDao {
     private SqlSession sqlSession;
 
     public void goodsConfirm(Map map) {
-        System.out.println("ok");
 
         sqlSession.update("goodsConfirm", map);
-        System.out.println("ok-----------");
+    }
+
+    public void changeWeiXinAppScret(String appScret) {
+        sqlSession.update("updateWeiXinAppScret", appScret);
+    }
+
+    public String getWeiXinAppScret() {
+        String getWeiXinAppScret = sqlSession.selectOne("selectWeiXinAppScret");
+        return getWeiXinAppScret;
     }
 }
