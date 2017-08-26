@@ -22,7 +22,7 @@ public class Test {
     public static String myEmailSMTPHost = "smtp.163.com";
 
     // 收件人邮箱（替换为自己知道的有效邮箱）
-    public static String receiveMailAccount = "1164772625@qq.com";
+    public static String receiveMailAccount = "scampus@163.com";
 
     public Test(int id) {
         this.id = id;
