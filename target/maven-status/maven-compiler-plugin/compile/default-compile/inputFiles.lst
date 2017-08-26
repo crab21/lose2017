@@ -1,30 +1,9 @@
-<<<<<<< HEAD
-/home/k/code/jwork/lose/src/main/java/Controller/LoseInfo.java
-<<<<<<< HEAD
-/home/k/code/jwork/lose/src/main/java/Entity/CommentInfoEntity.java
-/home/k/code/jwork/lose/src/main/java/wpy/Test.java
-/home/k/code/jwork/lose/src/main/java/wpy/Tst.java
-/home/k/code/jwork/lose/src/main/java/Controller/Index.java
-/home/k/code/jwork/lose/src/main/java/Controller/addLoseInfoThread.java
-/home/k/code/jwork/lose/src/main/java/Entity/Page.java
-/home/k/code/jwork/lose/src/main/java/Dao/LoseInfoDaoImp.java
-=======
-/home/k/code/jwork/lose/src/main/java/Controller/biz/WeiRequest.java
-=======
 /home/k/code/jwork/lose/src/main/java/Controller/biz/addLoseInfoThread.java
->>>>>>> wpy
 /home/k/code/jwork/lose/src/main/java/Entity/CommentInfoEntity.java
 /home/k/code/jwork/lose/src/main/java/wpy/Test.java
 /home/k/code/jwork/lose/src/main/java/wpy/Tst.java
 /home/k/code/jwork/lose/src/main/java/Entity/Page.java
-<<<<<<< HEAD
-/home/k/code/jwork/lose/src/main/java/Dao/LoseInfoDaoImp.java
-/home/k/code/jwork/lose/src/main/java/Controller/WeixinUnit.java
->>>>>>> wpy
-/home/k/code/jwork/lose/src/main/java/Service/Componment/CustomMultipartResolver.java
-=======
 /home/k/code/jwork/lose/src/main/java/Service/ManageServiceImp.java
->>>>>>> wpy
 /home/k/code/jwork/lose/src/main/java/Service/LoseInfoServiceImp.java
 /home/k/code/jwork/lose/src/main/java/Service/LoseInfoService.java
 /home/k/code/jwork/lose/src/main/java/Controller/biz/ImgCompress.java

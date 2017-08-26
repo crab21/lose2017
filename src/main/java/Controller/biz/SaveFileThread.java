@@ -27,7 +27,8 @@ public class SaveFileThread implements Runnable {
     //上传文件  单独的方法
     public String saveFile(MultipartFile file, String filename) {
 //        String path = "/home/k/uploadFile";
-        String path = "/home/apache-three/webapps/uploadFile";
+        String path = "/home/apa-3/webapps/uploadFile";
+
         if (!file.isEmpty()) {
 //            String path = request.getServletContext().getRealPath("/");
 

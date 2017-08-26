@@ -149,7 +149,6 @@
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 showvalf();
                 weixinshare();
-                alert("ok");
             } else {
                 location.href = "wrong.html";
 //                showvalf();
@@ -166,9 +165,8 @@
                 data: {"urls": locate_url},
                 type: "POST",
                 success: function (data) {
-                    alert("start");
                     wx.config({
-                        debug: true,
+                        debug: false,
                         appId: 'wxb959ca08d98bc454',
                         timestamp: data.timestamp,
                         nonceStr: data.noncestr,
@@ -338,7 +336,7 @@
         </script>
 
         <!--<span class="tab-label">文案</span>-->
-
+<br><br><br>
 
     </div>
     <nav class="bar bar-tab">
@@ -377,13 +375,18 @@
 
         function confirmDelete() {
             var id = document.URL;
-            id = id.substring(id.indexOf("=")+1, id.indexOf("&"));
+            var ids;
+            ids=id.split("=")[1];
+            if(isNaN(ids)){
+                ids = id.substring(id.indexOf("=")+1, id.indexOf("&"));
+            }
+
 
             $.ajax({
                 url: "index/deleteOne",
                 type: "POST",
                 dataType: "json",
-                data: {id: id},
+                data: {id: ids},
                 success: function (data) {
                     if (data == "ok") {
                         $.toast("已向管理员发送认领申请");
@@ -395,6 +398,7 @@
             });
         }
     </script>
+    <br><br><br>
 </div>
 
 <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>

@@ -68,9 +68,8 @@
                 data: {"urls": urls},
                 type: "POST",
                 success: function (data) {
-                    alert("wag ");
                     wx.config({
-                        debug: true,
+                        debug: false,
                         appId: 'wxb959ca08d98bc454',
                         timestamp: data.timestamp,
                         nonceStr: data.noncestr,

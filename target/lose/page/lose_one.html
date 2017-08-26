@@ -6,11 +6,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
 
-<<<<<<< HEAD
-=======
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 
->>>>>>> wpy
     <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
@@ -36,20 +33,6 @@
     <script>
 
         var page = 0;
-<<<<<<< HEAD
-
-        function showvalf() {
-            var id = document.URL.split("=")[1];
-            if (isNaN(id)) {
-                id = id.substring(0, id.lastIndexOf("#"));
-                if (isNaN(id)) {
-                    alert("请不要捣乱....");
-                } else {
-                    comment_ajax(id);
-                }
-            } else {
-                comment_ajax(id);
-=======
         var share_title = "";
         var share_img = "";
         var share_id = "";
@@ -78,7 +61,6 @@
                 comment_ajax(id);
             } else {
                 location.href = "index.html";
->>>>>>> wpy
             }
         }
 
@@ -104,22 +86,6 @@
 
         function addCommentInfo(data) {
             var loseOneInfo = data.loseInfo;
-<<<<<<< HEAD
-            $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.ltitle);
-            var type = loseOneInfo.ltype;
-            if (type == '0') {
-                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='red'>&nbsp;失物申报</font>");
-            } else {
-                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>");
-            }
-
-            $(".card-content-inner > p").html(loseOneInfo.linfo);
-            $("#ltimes").html(loseOneInfo.ltime);
-            $("#location > p").html("<img src='../img/form/location.png' style='width: 25px'>&nbsp;&nbsp;" + loseOneInfo.location + "<br><img src='../img/form/phone.png' style='width: 25px;height: 25px;'>&nbsp;&nbsp;" + loseOneInfo.lphone);
-            $("#lcomment").html("<img src='../img/pinglun.png' id='comment_img'  height='20px' width='20px'>&nbsp;&nbsp;<span id='lcommentCount'>" + loseOneInfo.lcomment + "</span>");
-            if (loseOneInfo.limg != "123.jpg") {
-                var htimg = '<img src="http://119.28.86.177:38080/uploadFile/' + loseOneInfo.limg + '" id="showimg" width="100%" alt="">';
-=======
             share_title = loseOneInfo.ltitle;
             $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + share_title);
             var type = loseOneInfo.ltype;
@@ -144,7 +110,6 @@
             if (share_img != "123.jpg") {
 
                 var htimg = '<img src="http://119.28.86.177:38080/uploadFile/' + share_img + '" id="showimg" width="100%" alt="">';
->>>>>>> wpy
                 $("#bottom").html(htimg);
 
             } else {
@@ -179,23 +144,11 @@
         }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> wpy
         function weixin() {
             var ua = window.navigator.userAgent.toLowerCase();
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 showvalf();
-<<<<<<< HEAD
-            } else {
-                location.href = "wrong.html";
-            }
-        }
-
-=======
                 weixinshare();
-                alert("ok");
             } else {
                 location.href = "wrong.html";
 //                showvalf();
@@ -212,9 +165,8 @@
                 data: {"urls": locate_url},
                 type: "POST",
                 success: function (data) {
-                    alert("start");
                     wx.config({
-                        debug: true,
+                        debug: false,
                         appId: 'wxb959ca08d98bc454',
                         timestamp: data.timestamp,
                         nonceStr: data.noncestr,
@@ -250,7 +202,6 @@
             });
         }
 
->>>>>>> wpy
     </script>
 
     <script>
@@ -281,19 +232,12 @@
             <div valign="bottom" class="card-header color-white no-border no-padding" id="bottom-father">
                 <a href="javascript:;" id="bottom"></a>
             </div>
-<<<<<<< HEAD
-            <div class="card-content">
-                <div class="card-content-inner">
-                    <p></p>
-                </div>
-=======
             <div class="card-content" id="titles">
                 <div class="card-content-inner" style="padding: 0px">
                     <p></p>
 
                 </div>
 
->>>>>>> wpy
             </div>
 
 
@@ -301,10 +245,7 @@
                 <div class="card-content-inner" id="location">
                     <p></p>
                 </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> wpy
             </div>
 
 
@@ -342,24 +283,8 @@
 
         <script type="text/javascript">
             $("#add_comment").bind('click', function () {
-<<<<<<< HEAD
-                var id = document.URL.split("=")[1];
-                if (isNaN(id)) {
-                    id = id.substring(0, id.lastIndexOf("#"));
-                    if (isNaN(id)) {
-                        $.toast("请不要捣乱");
-                    } else {
-                        confirmComment(id);
-                    }
-                } else {
-                    confirmComment(id);
-                }
-
-
-=======
                 var id = $.cookie("share_id");
                 confirmComment(id);
->>>>>>> wpy
             });
             //    添加评论
             function confirmComment(id) {
@@ -411,7 +336,7 @@
         </script>
 
         <!--<span class="tab-label">文案</span>-->
-
+<br><br><br>
 
     </div>
     <nav class="bar bar-tab">
@@ -427,9 +352,6 @@
             <img src="../img/publish.png" style="width: 30px;height: 30px">
             <!--<span class="tab-label">文案</span>-->
         </a>
-<<<<<<< HEAD
-    </nav>
-=======
         <a class="tab-item external" href="javascript:;" id="deleteOne">
             <img src="../img/认领确认.png" style="width: 30px;height: 30px">
             <!--<span class="tab-label">文案</span>-->
@@ -453,13 +375,18 @@
 
         function confirmDelete() {
             var id = document.URL;
-            id = id.substring(id.indexOf("=")+1, id.indexOf("&"));
+            var ids;
+            ids=id.split("=")[1];
+            if(isNaN(ids)){
+                ids = id.substring(id.indexOf("=")+1, id.indexOf("&"));
+            }
+
 
             $.ajax({
                 url: "index/deleteOne",
                 type: "POST",
                 dataType: "json",
-                data: {id: id},
+                data: {id: ids},
                 success: function (data) {
                     if (data == "ok") {
                         $.toast("已向管理员发送认领申请");
@@ -471,7 +398,7 @@
             });
         }
     </script>
->>>>>>> wpy
+    <br><br><br>
 </div>
 
 <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>

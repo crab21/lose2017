@@ -4,29 +4,11 @@ Service/LoseInfoServiceImp.class
 Dao/LoseInfoDao.class
 Service/ManageServiceImp.class
 Service/Componment/FileUploadProgressListener.class
-<<<<<<< HEAD
-<<<<<<< HEAD
-Service/Componment/CustomMultipartResolver.class
-<<<<<<< HEAD
-Controller/Index.class
-Service/Componment/ProgressEntity.class
-=======
-Controller/WeixinUnit.class
-Service/Componment/ProgressEntity.class
-Controller/biz/WeiRequest.class
->>>>>>> wpy
-Service/LoseInfoService.class
-=======
-Controller/WeixinUnit.class
-Service/Componment/ProgressEntity.class
->>>>>>> wpy
-=======
 Controller/biz/SaveFileThread.class
 Controller/scheTime/WeiXinAppScret.class
 Controller/ManageController.class
 Service/Componment/ProgressEntity.class
 Service/ManageService.class
->>>>>>> wpy
 Entity/LoseInfoEntity.class
 Entity/CommentInfoEntity.class
 Controller/biz/ImgCompress.class

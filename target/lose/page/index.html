@@ -5,13 +5,8 @@
     <title>明德微校园</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
-<<<<<<< HEAD
-
-
-=======
     <!--分享朋友圈-->
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
->>>>>>> wpy
     <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
@@ -19,7 +14,7 @@
     <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
     <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js'
             charset='utf-8'></script>
-    <script type='text/javascript' src='../js/jquery-2.1.4.js'></script>
+    <script type='text/javascript' src='../js/jquery-2.1.4.js'> </script>
 
 
     <!--使用cookie-->
@@ -45,10 +40,7 @@
 
         function lo() {
             theme_dark();
-<<<<<<< HEAD
-=======
             weixinshare();
->>>>>>> wpy
             ++page;
             $.ajax({
                 url: "index/loseAllInfo",
@@ -67,8 +59,6 @@
             });
         }
 
-<<<<<<< HEAD
-=======
         function weixinshare() {
             var imgurls = "http://119.28.86.177:38080/uploadFile/scampus.jpg";
             var urls = window.location.href;
@@ -78,9 +68,8 @@
                 data: {"urls": urls},
                 type: "POST",
                 success: function (data) {
-                    alert("wag ");
                     wx.config({
-                        debug: true,
+                        debug: false,
                         appId: 'wxb959ca08d98bc454',
                         timestamp: data.timestamp,
                         nonceStr: data.noncestr,
@@ -115,7 +104,6 @@
             });
         }
 
->>>>>>> wpy
 
         function theme_dark() {
             var dateHour = new Date().getHours();
@@ -152,17 +140,12 @@
                     + '</div>'
                     + '<div class="item-inner">'
                     + '<div class="item-title-row">'
-<<<<<<< HEAD
-                    + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>'
-                    + '  </div>'
-=======
                     + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>';
                 if (data[i].lflag == 1) {
                     html += "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
                 }
 
                 html += '  </div>'
->>>>>>> wpy
 //                        +'<div class="item-subtitle">子标题</div>'
                     + '</div>'
                     + '</li>'
@@ -194,11 +177,8 @@
 //            }
             lo();
         }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> wpy
     </script>
 
 </head>

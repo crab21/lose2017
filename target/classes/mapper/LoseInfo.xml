@@ -13,25 +13,15 @@
         <result property="lcomment" column="lcomment"/>
         <result property="location" column="location"/>
         <result property="lphone" column="lphone"/>
-<<<<<<< HEAD
-    </resultMap>
-    <select id="selectAllInfo" resultMap="listInfoMapper" parameterType="pageMap">
-        select * from lose_info order by id desc limit #{pageCount},#{pageSize}
-=======
         <result property="lflag" column="lflag"/>
     </resultMap>
     <select id="selectAllInfo" resultMap="listInfoMapper" parameterType="pageMap">
         select * from lose_info where lflag!=2 order by id desc limit #{pageCount},#{pageSize}
->>>>>>> wpy
     </select>
 
     <insert id="insertLoseInfo" parameterType="loseInfoEntityMap">
         insert into lose_info VALUES
-<<<<<<< HEAD
-        (0,#{ltitle},#{ltype},#{limg},#{linfo},#{ltime},0,#{location},#{lphone})
-=======
         (0,#{ltitle},#{ltype},#{limg},#{linfo},#{ltime},0,#{location},#{lphone},0)
->>>>>>> wpy
     </insert>
 
 
@@ -71,21 +61,15 @@
         ORDER BY id DESC
 
     </select>
-<<<<<<< HEAD
-=======
 
 
 
     <update id="changeDeleteOne" parameterType="int" >
         update lose_info set lflag=1 where id=#{id}
     </update>
-<<<<<<< HEAD
->>>>>>> wpy
-=======
 
 
     <delete id="deleteOneCommentById" parameterType="int">
         delete from comment_info where id=#{id}
     </delete>
->>>>>>> wpy
 </mapper>

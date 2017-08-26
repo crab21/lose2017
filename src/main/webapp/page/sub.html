@@ -219,10 +219,13 @@
                         }
                     } else {
                         var file = $(this)[0].files[0];
-                        if (file.size > (1024 * 1024 * 3)) {
-                            $.toast("文件不能超过3M");
-                            flagCount += 100;
+                        if(file!=undefined && file != null){
+                            if (file.size > (1024 * 1024 * 3)) {
+                                $.toast("文件不能超过3M");
+                                flagCount += 100;
+                            }
                         }
+
                         formdata.append($(this).attr("name"), file);
                     }
                 });
