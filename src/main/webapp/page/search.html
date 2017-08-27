@@ -78,9 +78,7 @@
 
 
 <div class="page">
-    <header class="bar bar-nav">
-        <h1 class="title"><img src="../img/loseTitle.png" width="20px" height="20px">&nbsp;失物招领信息发布中心</h1>
-    </header>
+    <br><br><br>
     <div class="content">
 
         <div style="display: inline">
@@ -246,7 +244,7 @@
             <img src="../img/主页.png" style="width: 30px;height: 40px">
             <!--<span class="tab-label">文案</span>-->
         </a>
-        <a class="tab-item external active open-panel" href="search.html" data-panel='#panel-left-demo'>
+        <a class="tab-item external active open-panel" href="javascript:history.go(0);" data-panel='#panel-left-demo'>
             <img src="../img/search.png" style="width: 30px;height: 30px">
             <!--<span class="tab-label">文案</span>-->
         </a>
@@ -254,6 +252,17 @@
             <img src="../img/publish.png" style="width: 25px;height: 25px">
             <!--<span class="tab-label">文案</span>-->
         </a>
+        <a class="tab-item external" href="javascript:;" id="loadmore">
+            <img src="../img/loadmore.png" style="width: 30px;height: 40px">
+            <!--<span class="tab-label">文案</span>-->
+        </a>
+        <script>
+            $(function () {
+               $("#loadmore").click(function () {
+                   $.toast("暂无更新消息~");
+               });
+            });
+        </script>
     </nav>
     <script src="../js/fastclick.js"></script>
     <script>

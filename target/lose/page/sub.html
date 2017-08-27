@@ -219,7 +219,7 @@
                         }
                     } else {
                         var file = $(this)[0].files[0];
-                        if(file!=undefined && file != null){
+                        if (file != undefined && file != null) {
                             if (file.size > (1024 * 1024 * 3)) {
                                 $.toast("文件不能超过3M");
                                 flagCount += 100;
@@ -285,7 +285,36 @@
     <div class="weui-footer">
         <p class="weui-footer__text">©明德微校园</p>
     </div>
+
+    <br><br><br>
+
 </div>
+
+<nav class="bar bar-tab">
+    <a class="tab-item external active open-panel" href="index.html" data-panel='#panel-left-demo'>
+        <img src="../img/主页.png" style="width: 30px;height: 40px">
+        <!--<span class="tab-label">文案</span>-->
+    </a>
+    <a class="tab-item external active open-panel" href="search.html" data-panel='#panel-left-demo'>
+        <img src="../img/search.png" style="width: 30px;height: 30px">
+        <!--<span class="tab-label">文案</span>-->
+    </a>
+    <a class="tab-item external active open-panel" href="javascript:history.go(0);" data-panel='#panel-left-demo'>
+        <img src="../img/publish.png" style="width: 25px;height: 25px">
+        <!--<span class="tab-label">文案</span>-->
+    </a>
+    <a class="tab-item external" href="javascript:;" id="loadmore">
+        <img src="../img/loadmore.png" style="width: 30px;height: 40px">
+        <!--<span class="tab-label">文案</span>-->
+    </a>
+    <script>
+        $(function () {
+            $("#loadmore").click(function () {
+                $.toast("暂无更新消息~");
+            });
+        });
+    </script>
+</nav>
 
 </body>
 </html>
