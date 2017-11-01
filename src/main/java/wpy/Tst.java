@@ -5,7 +5,7 @@ package wpy;
  */
 public class Tst {
     public static void main(String[] args) {
-        String time12 = "2017-7-13 21:10:22";
-        System.out.println(time12.split(":"));
+        String time12 = "fsdfasfsad.jpg";
+        System.out.println(time12.substring(0,time12.lastIndexOf(".")));
     }
 }

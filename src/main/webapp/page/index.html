@@ -136,7 +136,7 @@
                     + '<ul>'
                     + '<li class="item-content">'
                     + '<div class="item-media">'
-                    + '<img src="http://119.28.86.177:38080/uploadFile/' + data[i].limg + '" width="44">'
+                    + '<img src="http://119.28.86.177:38080/uploadFile/' + data[i].limg + '" width="44"/>'
                     + '</div>'
                     + '<div class="item-inner">'
                     + '<div class="item-title-row">'
@@ -172,8 +172,7 @@
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 lo();
             } else {
-//                location.href = "wrong.html";
-                lo();
+                location.href = "wrong.html";
             }
 
         }
@@ -195,9 +194,12 @@
         </div>
 
         <div class="weui-footer">
-            <p class="weui-footer__text">©明德微校园</p>
+            <font><i>此版块由失物招领协会监管
+            <br>明德微校园版权所有</i></font><br>
+            <img src="../img/zl.jpg" width="80px" height="80px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../img/wx.jpg" width="80px" height="80px">
         </div>
-
+<br><br>
 
     </div>
 

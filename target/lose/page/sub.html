@@ -147,6 +147,7 @@
 
 
             <div class="weui-cell">
+
                 <div class="weui-cell__bd">
                     <div class="weui-uploader">
                         <div class="weui-uploader__hd">
@@ -174,7 +175,7 @@
                         reader.readAsDataURL($(this)[0].files[0]);
                         reader.onload = function (e) {
 //                            alert(e.target.result);
-                            if (reader.size > (1024 * 1024 * 3)) {
+                            if (reader.size > (1024 * 1024)) {
                                 $.toast("文件过大");
                             }
                             $(".weui-uploader__file").css("background-image", "url('" + e.target.result + "')");
@@ -220,7 +221,7 @@
                     } else {
                         var file = $(this)[0].files[0];
                         if (file != undefined && file != null) {
-                            if (file.size > (1024 * 1024 * 3)) {
+                            if (file.size > (1024 * 1024 *3)) {
                                 $.toast("文件不能超过3M");
                                 flagCount += 100;
                             }

@@ -41,14 +41,14 @@ public class SaveFileThread implements Runnable {
                 file.transferTo(new File(path + File.separator + filename));
 
 
-                if (file.getSize() > (1024 * 1024 * 1)){
+                /*if (file.getSize() > (1024 * 1024 * 1)){
                     try {
                         ImgCompress imgCompress = new ImgCompress(path + "/" + filename);
                         imgCompress.resizeFix(400, 400);
                     } catch (IOException e) {
 
                     }
-                }
+                }*/
                 return filename;
             } catch (IOException e) {
                 e.printStackTrace();

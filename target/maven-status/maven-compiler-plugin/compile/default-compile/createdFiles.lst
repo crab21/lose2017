@@ -15,7 +15,6 @@ Controller/biz/ImgCompress.class
 Dao/ManageDaoImp.class
 Controller/biz/addLoseInfoThread.class
 Entity/Page.class
-Controller/biz/WeixinUnit.class
 Dao/ManageDao.class
 Service/Componment/CustomMultipartResolver.class
 Service/LoseInfoService.class

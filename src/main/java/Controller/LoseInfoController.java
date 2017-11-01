@@ -15,7 +15,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 import wpy.Test;
 
 import javax.servlet.http.HttpServletRequest;
@@ -156,15 +158,27 @@ public class LoseInfoController {
             filename = file.getOriginalFilename();
             String ftype = filename.substring(filename.lastIndexOf("."), filename.length()).toLowerCase();
             filename = new Date().getTime() + "" + filename.substring(0, filename.lastIndexOf(".")) + ftype;
+      //    filename = new Date().getTime()  +""+ ftype;
 
-            Runnable run1 = new SaveFileThread(file, filename);
-            Thread thread = new Thread(run1);
-            thread.start();
+            try {
+                Runnable run1 = new SaveFileThread(file, filename);
+                Thread thread = new Thread(run1);
+                thread.start();
+            }catch (MaxUploadSizeExceededException ex){
+                System.out.println("文件过大");
+            }
+
         }
         Thread thread2 = new Thread(new addLoseInfoThread(model, loseInfoService, filename));
         thread2.start();
         setResponseInfo(response, "ok");
         return null;
+    }
+
+    @ExceptionHandler(MaxUploadSizeExceededException.class)
+    public ModelAndView handleException(Exception e) throws Exception {
+        System.out.println("文件过大");
+        return new ModelAndView("upload").addObject("msg", "文件太大！");
     }
 
 

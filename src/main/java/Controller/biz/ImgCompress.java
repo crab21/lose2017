@@ -27,7 +27,7 @@ public class ImgCompress {
     @SuppressWarnings("deprecation")
     public static void main(String[] args) throws Exception {
         System.out.println("开始：" + new Date().toLocaleString());
-        ImgCompress imgCom = new ImgCompress("/home/k/uploadFile/htmlunitl_error_1.png");
+        ImgCompress imgCom = new ImgCompress("/home/ss.png");
         imgCom.resizeFix(400, 400);
         System.out.println("结束：" + new Date().toLocaleString());
     }
