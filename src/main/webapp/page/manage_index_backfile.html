@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明德微校园</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js'
+            charset='utf-8'></script>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+
+    <!--jQuery-->
+    <!-- head 中 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
+    <!--jQuery结束-->
+    <script>
+        function theme_dark() {
+            var dateHour = new Date().getHours();
+            if (dateHour > 20 || dateHour < 7) {
+                $("body").addClass("theme-dark");
+            } else {
+                $("body").removeClass("theme-dark");
+            }
+
+        }
+
+
+        function manage_validate() {
+            $.ajax({
+                url: "index/manage_validate",
+                dataType: "json",
+                type: "POST",
+                success: function (data) {
+                    if (data == "ok") {
+                        lo();
+                    } else {
+                        location.href = "manage.html";
+                    }
+                }
+            });
+        }
+
+
+        <!--第page页-->
+        var page = 0;
+
+        function lo() {
+            ++page;
+            $.ajax({
+                url: "index/loseAllInfo",
+                type: "POST",
+                dataType: "json",
+                data: {"page": page},
+                success: function (data) {
+                    if (data.length < 10) {
+                        $("#loadmore").unbind('click').bind('click', function () {
+                            $.toast("暂无更多消息");
+                        });
+                    }
+                    ajaxLoadIndex(data);
+                    $.toast("加载完成", 1000);
+                }
+            });
+        }
+
+
+        function ajaxLoadIndex(data) {
+
+            var html = "";
+            for (var i = 0; i < data.length; ++i) {
+                var showOne = data[i].id;
+                html = '<a href="javascript:;" id="show_one" onclick="showOnes(' + showOne + ');"><div class="card" style="display: none"><div class="card-header" style="display: inline-flex">';
+
+                if (data[i].ltype == 0) {
+                    html += '<img src="../img/失物申报.png" style="height: 20px;display: inline"><font size="3">' + data[i].id + '</font>&nbsp;&nbsp;失物申报';
+                } else {
+                    html += '<img src="../img/失物上交.png" style="height: 20px;display: inline"><font size="3">' + data[i].id + '</font> &nbsp;&nbsp;失物上交';
+                }
+
+                html += '</div>'
+                    + '<div class="card-content">'
+                    + '<div class="list-block media-list">'
+                    + '<ul>'
+                    + '<li class="item-content">'
+                    + '<div class="item-inner">'
+                    + '<div class="item-title-row">'
+                    + '<div class="item-title"><a href="javascript:;" style="color: #494A5F" id="show_one" onclick="showOnes(' + showOne + ');">' + data[i].ltitle + '</a></div>';
+                if (data[i].lflag == 1) {
+                    html += "<div style='float: right'> <img src='../img/shenhezhong.png' width='40px' height='40px'></div>";
+                }
+
+                html += '  </div>'
+//                        +'<div class="item-subtitle">子标题</div>'
+                    + '</div>'
+                    + '</li>'
+                    + '</ul>'
+                    + '</div>'
+                    + '</div>'
+                    + '</div></a>';
+                $("#lose_content").before(html)
+                $(".card").fadeIn(2000);
+            }
+        }
+
+        //主页中点击
+        function showOnes(id) {
+            location.href = "manage_one.html?id=" + id;
+        }
+        function weixin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                theme_dark();
+                lo();
+            } else {
+//                location.href = "wrong.html";
+                manage_validate();
+            }
+        }
+    </script>
+</head>
+<body onload="weixin()">
+<header class="bar bar-nav">
+    <h1 class='title'>  <img src="../img/manage/manage_tai.png" width="20px" height="18px">后台管理</h1>
+</header>
+<div class="content" id="content-page">
+    <div class="content-block" id="lose_content">
+        <!--<p><a href="#" class="button button-fill " >打开左侧栏</a></p>-->
+    </div>
+
+
+
+    <div class="weui-footer">
+        <p class="weui-footer__text">©明德微校园</p>
+    </div>
+</div>
+
+</body>
+</html>

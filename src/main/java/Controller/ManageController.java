@@ -1,8 +1,8 @@
 package Controller;
 
+import Service.LoseInfoService;
 import Service.ManageService;
 import com.google.gson.Gson;
-import org.apache.ibatis.annotations.Property;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -20,12 +20,11 @@ import java.util.Map;
  */
 @Controller
 @Scope("prototype")
-@RequestMapping("manage/")
 public class ManageController {
     @Autowired
     private ManageService manageService;
 
-    @RequestMapping("goodsConfirm")
+    @RequestMapping("manage/goodsConfirm")
     public String goodsConfirm(@RequestParam("flag") String flag, @RequestParam("id") int id, HttpServletResponse response) {
 //       标记  是认领还是还原未认领状态
         System.out.println(flag+"------"+id);
@@ -42,19 +41,29 @@ public class ManageController {
         }
 
         if (commentFlag == 3) {
-            setResponseInfo(response, "no");
+            setResponseInfo(response, "ok");
         } else {
             Map map = new HashMap();
             map.put("flag", commentFlag);
             map.put("id", id);
 
             manageService.goodsConfirm(map);
-            setResponseInfo(response, "no");
+            String finishFlag = "";
+            if(commentFlag == 0){
+                finishFlag="no";
+            }else{
+                finishFlag="ok";
+            }
+            setResponseInfo(response, finishFlag);
         }
 
         return null;
     }
 
+   @RequestMapping("manage")
+   public String manageTo(){
+       return "manage";
+   }
 
     //ajax交互时候 后台的数据处理
     public void setResponseInfo(HttpServletResponse response, Object object) {

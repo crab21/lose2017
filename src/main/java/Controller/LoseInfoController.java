@@ -10,6 +10,7 @@ import Entity.SearchEntity;
 import Service.Componment.ProgressEntity;
 import Service.LoseInfoService;
 import com.google.gson.Gson;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -98,7 +99,10 @@ public class LoseInfoController {
     @RequestMapping("loseAllInfo")
     public String showInfo(@ModelAttribute("page") Page page, HttpServletRequest request, HttpServletResponse response) {
         List list = loseInfoService.findAllInfo(page);
+        Logger log = Logger.getLogger(LoseInfoController.class);
 
+        log.info("start");
+        System.out.println("---------------------------------");
         setResponseInfo(response, list);
         return null;
     }
@@ -270,9 +274,9 @@ public class LoseInfoController {
         if(lusername.equals("admin") && lpassword.equals("s123")) {
             request.getSession().setAttribute("manage_flag", "manage_ok");
             System.out.println("ok");
-            return "jump/manage_jump";
+            return "redirect:/manage";
         }
-        return "manage";
+        return "../page/manage";
     }
 
     @RequestMapping("manage_validate")

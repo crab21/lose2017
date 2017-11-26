@@ -90,11 +90,12 @@
             $(".title").html("<img src='../img/form/title.png' style='width: 25px'>&nbsp;&nbsp;" + share_title);
             var type = loseOneInfo.ltype;
             if (type == '0') {
-                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='red'>&nbsp;失物申报</font>");
-                share_title = "申报帖:" + share_title;
+
+                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='red'>&nbsp;失物申报</font>#"+loseOneInfo.id);
+
             } else {
-                share_title = "上交帖:" + share_title;
-                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>");
+
+                $("#card-header").html("<img src='../img/form/type.png' id='comment_img'  height='20px' width='20px'><font color='green'>&nbsp;失物上交</font>#"+loseOneInfo.id);
             }
 
             $(".card-content-inner > p").html("&nbsp;&nbsp;&nbsp; " + loseOneInfo.linfo);

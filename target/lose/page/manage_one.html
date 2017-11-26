@@ -146,7 +146,6 @@
 
         //删除评论信息
         function deleteById(id) {
-            alert(id);
             $.confirm("确认删除此条评论吗？", function () {
                 deleteCommentById(id);
             }, function () {
@@ -178,6 +177,7 @@
             } else {
 //                location.href = "wrong.html";
                 showvalf();
+                weixinshare();
             }
         }
 
@@ -433,6 +433,10 @@
                 success: function (data) {
                     if (data == "ok") {
                         $.toast("此物品已下架");
+                        setTimeout("location.href='../manage'",2000);
+                    }else{
+                        $.toast("此物品已重置到未认领状态");
+                        setTimeout("location.href='../manage'",2000);
                     }
                 }
             });
