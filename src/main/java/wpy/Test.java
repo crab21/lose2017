@@ -1,9 +1,13 @@
 package wpy;
 
+import net.coobird.thumbnailator.Thumbnails;
+
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
 
@@ -28,7 +32,7 @@ public class Test {
         this.id = id;
     }
 
-    public  void sends() throws Exception {
+    public void sends() throws Exception {
         // 1. 创建参数配置, 用于连接邮件服务器的参数配置
         Properties props = new Properties();                    // 参数配置
         props.setProperty("mail.transport.protocol", "smtp");   // 使用的协议（JavaMail规范要求）
@@ -105,7 +109,7 @@ public class Test {
         message.setSubject("明德微校园", "UTF-8");
 
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("申请删除："+id+",请及时核实并处理...", "text/html;charset=UTF-8");
+        message.setContent("申请删除：" + id + ",请及时核实并处理...", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());
@@ -114,9 +118,5 @@ public class Test {
         message.saveChanges();
 
         return message;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Date().toLocaleString());
     }
 }

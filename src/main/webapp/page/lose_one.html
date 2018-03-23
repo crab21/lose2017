@@ -146,14 +146,15 @@
 
 
         function weixin() {
-            var ua = window.navigator.userAgent.toLowerCase();
-            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
-                showvalf();
-                weixinshare();
-            } else {
-                location.href = "wrong.html";
+//            var ua = window.navigator.userAgent.toLowerCase();
+//            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
 //                showvalf();
-            }
+//                weixinshare();
+//            } else {
+//                location.href = "wrong.html";
+//            }
+            showvalf();
+            weixinshare();
         }
 
 
@@ -395,6 +396,8 @@
                         $("#titles").append(hhtml);
                         $("#deleteOne").remove();
                     }
+                },error:function (textStatus) {
+                    alert(textStatus);
                 }
             });
         }

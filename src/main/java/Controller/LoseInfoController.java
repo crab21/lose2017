@@ -50,7 +50,7 @@ public class LoseInfoController {
 
     //微信朋友圈分享
     @RequestMapping("weixinshare")
-    public String weixinshare(@RequestParam("urls")String urls, HttpServletResponse response, HttpServletRequest request) {
+    public String weixinshare(@RequestParam("urls") String urls, HttpServletResponse response, HttpServletRequest request) {
         Map map = weiRequest.getAllInfo();
         map.put("url", urls);
 //        拿到签名
@@ -162,13 +162,13 @@ public class LoseInfoController {
             filename = file.getOriginalFilename();
             String ftype = filename.substring(filename.lastIndexOf("."), filename.length()).toLowerCase();
             filename = new Date().getTime() + "" + filename.substring(0, filename.lastIndexOf(".")) + ftype;
-      //    filename = new Date().getTime()  +""+ ftype;
+            //    filename = new Date().getTime()  +""+ ftype;
 
             try {
                 Runnable run1 = new SaveFileThread(file, filename);
                 Thread thread = new Thread(run1);
                 thread.start();
-            }catch (MaxUploadSizeExceededException ex){
+            } catch (MaxUploadSizeExceededException ex) {
                 System.out.println("文件过大");
             }
 
@@ -237,10 +237,27 @@ public class LoseInfoController {
 
 
     @RequestMapping("deleteOne")
-    public String deleteOne(@RequestParam("id") int id, HttpServletResponse response) throws Exception {
-        loseInfoService.deleteOne(id);
-        Test te = new Test(id);
-        te.sends();
+    public String deleteOne(@RequestParam("id") final int id, HttpServletResponse response) {
+
+
+
+        new Runnable() {
+            public void run() {
+                loseInfoService.deleteOne(id);
+            }
+        };
+        new Runnable() {
+            public void run() {
+                try {
+                    Test te = new Test(id);
+                    te.sends();
+                } catch (Exception e) {
+
+                } finally {
+
+                }
+            }
+        };
         setResponseInfo(response, "ok");
         return null;
     }
@@ -270,8 +287,8 @@ public class LoseInfoController {
 
 
     @RequestMapping("manage")
-    public String  manage(@RequestParam("lusername")String lusername,@RequestParam("lpassword")String lpassword,HttpServletRequest request,HttpServletResponse response){
-        if(lusername.equals("admin") && lpassword.equals("s123")) {
+    public String manage(@RequestParam("lusername") String lusername, @RequestParam("lpassword") String lpassword, HttpServletRequest request, HttpServletResponse response) {
+        if (lusername.equals("admin") && lpassword.equals("s123")) {
             request.getSession().setAttribute("manage_flag", "manage_ok");
             System.out.println("ok");
             return "redirect:/manage";
@@ -280,24 +297,25 @@ public class LoseInfoController {
     }
 
     @RequestMapping("manage_validate")
-    public String manage_validate(HttpServletRequest request,HttpServletResponse response){
+    public String manage_validate(HttpServletRequest request, HttpServletResponse response) {
         String flag = (String) request.getSession().getAttribute("manage_flag");
-        if(flag != null){
-            if(flag.equals("manage_ok")){
-                setResponseInfo(response,"ok");
-            }else {
-                setResponseInfo(response,"failed");
+        if (flag != null) {
+            if (flag.equals("manage_ok")) {
+                setResponseInfo(response, "ok");
+            } else {
+                setResponseInfo(response, "failed");
             }
-        }else{
-            setResponseInfo(response,"failed");
+        } else {
+            setResponseInfo(response, "failed");
         }
 
         return null;
     }
+
     @RequestMapping("deleteCommentById")
-    public String deleteCommentById(@RequestParam("id")int id,HttpServletResponse response){
+    public String deleteCommentById(@RequestParam("id") int id, HttpServletResponse response) {
         loseInfoService.deleteOneComment(id);
-        setResponseInfo(response,"ok");
+        setResponseInfo(response, "ok");
         return null;
     }
 
