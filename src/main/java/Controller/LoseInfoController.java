@@ -239,13 +239,7 @@ public class LoseInfoController {
     @RequestMapping("deleteOne")
     public String deleteOne(@RequestParam("id") final int id, HttpServletResponse response) {
 
-
-
-        new Runnable() {
-            public void run() {
-                loseInfoService.deleteOne(id);
-            }
-        };
+        loseInfoService.deleteOne(id);
         new Runnable() {
             public void run() {
                 try {
@@ -258,6 +252,11 @@ public class LoseInfoController {
                 }
             }
         };
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+
+        }
         setResponseInfo(response, "ok");
         return null;
     }

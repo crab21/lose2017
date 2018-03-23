@@ -2,194 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af5cce47-719e-43f1-afe1-34e4a8b04324" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lose.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wpy/Tst.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/LoseInfoController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/ManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/ImgCompress.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/SaveFileThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/biz/addLoseInfoThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controller/scheTime/WeiXinAppScret.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/LoseInfoDaoImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ManageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ManageDaoImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/CommentInfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/LoseInfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Entity/SearchEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/Componment/CustomMultipartResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/Componment/FileUploadProgressListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/Componment/ProgressEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/LoseInfoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/LoseInfoServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/ManageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/ManageServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Service/WeiRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/LoseInfo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/Manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wpy/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wpy/Tst.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/LoseInfoController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/ManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/ImgCompress.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/SaveFileThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/biz/addLoseInfoThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Controller/scheTime/WeiXinAppScret.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/LoseInfoDaoImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/ManageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Dao/ManageDaoImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/CommentInfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/LoseInfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Entity/SearchEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/CustomMultipartResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/FileUploadProgressListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/Componment/ProgressEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/LoseInfoServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/ManageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/ManageServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/Service/WeiRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/LoseInfo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mapper/Manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/wpy/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/classes/wpy/Tst.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ant-1.9.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ant-launcher-1.9.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/asm-5.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/cglib-3.2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-collections-3.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/commons-pool-1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/gson-2.8.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/javassist-3.21.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-1.2.16.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-api-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/log4j-core-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mail-1.4.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mybatis-3.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/mysql-connector-java-5.1.42.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/ognl-3.1.14.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/rt.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-context-support-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-instrument-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-jms-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-messaging-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-orm-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-oxm-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/css/demos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/css/htmleaf-demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/css/jquery.lineProgressbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/css/jquery.lineProgressbar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/css/picfull/jquery.fancybox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/123.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/aboutUs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/bodyBg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/bodyBg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/form/info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/form/location.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/form/phone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/form/title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/form/type.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/fancybox_sprite@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/fullpic/jquery.fancybox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/loadmore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/loseOneTitle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/loseTitle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/manage/confirm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/manage/manage_tai.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/manage/pwd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/manage/repeat_show.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/manage/user.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/me.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/pinglun.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/publish.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/scampus.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/setting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/shenhezhong.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/wx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/xuanran/ss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/zl.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/主页.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/失物上交.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/失物申报.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/留言.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/认领确认.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/img/返回.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/inde.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/js/fastclick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/js/jquery-2.1.4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/js/jquery.lineProgressbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/js/picfull/jquery.fancybox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/js/picfull/jquery.fancybox.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/js/picfull/jquery.mousewheel-3.0.6.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/manage/manage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/lose_one.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/manage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/manage_index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/manage_index_backfile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/manage_one.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/sub.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/page/wrong.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lose/uploadFile/123.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/lose_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/lose_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wpy/Test.java" afterPath="$PROJECT_DIR$/src/main/java/wpy/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page/lose_one.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/lose_one.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -244,11 +58,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoseInfoController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoseInfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="250" column="21" lean-forward="false" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="251" column="17" lean-forward="false" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
+              <folding>
+                <element signature="e#8376#8634#0" expanded="true" />
+                <element signature="e#8633#8634#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaveFileThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -345,16 +172,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="manage_index_backfile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/page/manage_index_backfile.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -398,12 +215,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/wpy/Test.java" />
         <option value="$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16.jar!/org/apache/log4j/Logger.class" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/lose_one.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java" />
       </list>
     </option>
   </component>
@@ -527,8 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -829,7 +644,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1398,11 +1215,12 @@
       <workItem from="1521801747236" duration="2337000" />
       <workItem from="1521804501063" duration="262000" />
       <workItem from="1521805371795" duration="593000" />
+      <workItem from="1521812811512" duration="189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16482000" />
+    <option name="totallyTimeSpent" value="16671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1415,7 +1233,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1436,10 +1253,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.87096775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.87096775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29198185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2965204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1471,7 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1537,7 +1353,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3638">
           <caret line="245" column="5" lean-forward="true" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#8376#8634#0" expanded="true" />
+            <element signature="e#8633#8634#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1593,7 +1412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1734,7 +1552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1780,13 +1597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Entity/CommentInfoEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1812,7 +1622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-386">
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1842,7 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1982,8 +1790,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/LoseInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="250" column="21" lean-forward="false" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
+        <state relative-caret-position="272">
+          <caret line="251" column="17" lean-forward="false" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
+          <folding>
+            <element signature="e#8376#8634#0" expanded="true" />
+            <element signature="e#8633#8634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/biz/SaveFileThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
           <folding />
         </state>
       </provider>
