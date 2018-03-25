@@ -240,25 +240,16 @@ public class LoseInfoController {
     public String deleteOne(@RequestParam("id") final int id, HttpServletResponse response) {
 
         loseInfoService.deleteOne(id);
-        new Runnable() {
-            public void run() {
-                try {
-                    Test te = new Test(id);
-                    te.sends();
-                } catch (Exception e) {
-
-                } finally {
-
-                }
-            }
-        };
+        Test te = new Test(id);
         try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-
+            te.sends();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            setResponseInfo(response, "ok");
+            return null;
         }
-        setResponseInfo(response, "ok");
-        return null;
+
     }
 
     //ajax交互时候 后台的数据处理

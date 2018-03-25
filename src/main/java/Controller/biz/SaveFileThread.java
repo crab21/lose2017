@@ -53,9 +53,10 @@ public class SaveFileThread implements Runnable {
 
                     }
                 }*/
-                Thumbnails.of(new File(path+File.separator+filename))
+/*                Thumbnails.of(path+File.separator+filename)
                         .scale(0.6)
-                        .toFile(new File(path+File.separator+filename));
+                        .toFile(path+File.separator+filename);
+                System.out.println("----------------------------------------------------------------");*/
                 return filename;
             } catch (IOException e) {
                     logger.info(e.getMessage()+this.getClass().getName()+"------"+new Date().toString());
