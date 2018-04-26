@@ -31,7 +31,7 @@ public class SaveFileThread implements Runnable {
     //上传文件  单独的方法
     public String saveFile(MultipartFile file, String filename) {
 //        String path = "/home/k/uploadFile";
-        String path = "/home/apa-3/webapps/uploadFile";
+        String path = "/data/ntf";
 
         if (!file.isEmpty()) {
 //            String path = request.getServletContext().getRealPath("/");
@@ -53,10 +53,10 @@ public class SaveFileThread implements Runnable {
 
                     }
                 }*/
-/*                Thumbnails.of(path+File.separator+filename)
+                Thumbnails.of(path+File.separator+filename)
                         .scale(0.6)
                         .toFile(path+File.separator+filename);
-                System.out.println("----------------------------------------------------------------");*/
+                System.out.println("----------------------------------------------------------------");
                 return filename;
             } catch (IOException e) {
                     logger.info(e.getMessage()+this.getClass().getName()+"------"+new Date().toString());
